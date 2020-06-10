@@ -1,0 +1,42 @@
+
+
+
+PROJETO X
+
+
+Ideia Central: Acompanhar a trajetória dos novos grupos de Kpop da "4ª Geração":
+
+
+Grupos:
+
+1º - GWSN(2018): 4 comebacks; + 
+2º - Loona(2018): 3 comebacks; +++
+3º - Iz*One(2018): 3 comebacks; ++++  
+4º - (G)-Igle(2018): 6 comebacks; ++++
+5º - BVNDIT(2019): 5 comebacks; +
+6º - Cherry Bullet(2019): 3 comebacks; ++ 
+7º - Rocket Punch(2019): 2 comebacks; ++ 
+8º - Everglow(2019): 3 comebacks; +++
+9º - ITZY(2019): 3 comebacks; ++++
+10º- Secret Number(2020): 1 debut; +
+11º- Natty(2020): 1 debut. ++
+
+Funcionalidades:
+
+- Perfil dos Grupos:
+	- Links dos MVS;
+		- Número de Views;
+		- Número de Likes;
+		- Mês e Ano do MV.
+	- Resumo;
+	- Nome das Integrantes;
+		- Foto, ano e idade;
+	- Ano de Debut.	
+ 
+- Listagem de Grupos : 
+	- Pela relação Likes/ Views;
+	- Por Views;
+	- Por Ano de Debut;
+	- Por Popularidade;
+	- Por Número de Comebacks.
+
