@@ -37,6 +37,48 @@ Funcionalidades:
 	- Pela relação Likes/ Views;
 	- Por Views;
 	- Por Ano de Debut;
-	- Por Popularidade;
+	- Por Popularidade;*
 	- Por Número de Comebacks.
+
+
+Cadeia de Objetos:
+	Grupo:
+		- Nome;
+		- Foto do Grupo;
+		- Ano de Debut;
+		- Resumo;
+		- Integrantes:
+			- Foto da integrante;
+			- Nome da integrante;
+			- Idade da integrante;
+			- País de Origem das Integrantes;
+
+		- Comebacks:
+			- Nome da música;
+			- Mês/ Ano da música;
+			- Views da Música;
+			- Likes da Música;
+			- Deslikes da Música;
+			- Link do Youtube para o M/V.
+
+
+Páginas:
+
+	Publico:
+		Grupos
+		Grupo/Perfil
+			Perfil/Intagrante;
+			Perfil/Comeback.
+	
+	Admin:
+		Adimin/Grupos
+			Grupo/Integrantes
+			Grupo/Comebacks;
+
+
+	
+		
+
+
+
 
