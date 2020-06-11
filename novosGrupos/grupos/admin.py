@@ -1,12 +1,12 @@
 from django.contrib import admin
-from .models        import Grupo, Comeback, Integrante
+from .models        import Grupo, Comeback, Artista
 
 # Register your models here.
 
 class GrupoAdmin(admin.ModelAdmin):
     list_display = ('nome', 'debut')
 
-class IntegranteAdmin(admin.ModelAdmin):
+class ArtistaAdmin(admin.ModelAdmin):
     list_display = ('nome', 'grupo')
 
 class ComebackAdmin(admin.ModelAdmin):
@@ -14,5 +14,5 @@ class ComebackAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Grupo, GrupoAdmin)
-admin.site.register(Integrante, IntegranteAdmin)
+admin.site.register(Artista, ArtistaAdmin)
 admin.site.register(Comeback, ComebackAdmin)
