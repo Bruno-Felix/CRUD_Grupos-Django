@@ -1,7 +1,18 @@
 from django.contrib import admin
 from .models        import Grupo, Comeback, Integrante
+
 # Register your models here.
 
-admin.site.register(Grupo)
-admin.site.register(Integrante)
-admin.site.register(Comeback)
+class GrupoAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'debut')
+
+class IntegranteAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'grupo')
+
+class ComebackAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'grupo', 'data', 'views')
+
+
+admin.site.register(Grupo, GrupoAdmin)
+admin.site.register(Integrante, IntegranteAdmin)
+admin.site.register(Comeback, ComebackAdmin)
