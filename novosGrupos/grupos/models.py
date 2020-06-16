@@ -24,6 +24,9 @@ class Artista(models.Model):
     pais = models.CharField("País do Artista", max_length=100)
     imagem = models.ImageField("Foto do Artista")
 
+    def __str__(self):
+        return self.nome
+
 
 class Comeback(models.Model):
     nome = models.CharField("Nome da Música", max_length = 100, unique=True)
