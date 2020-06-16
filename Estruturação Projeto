@@ -76,8 +76,14 @@ Páginas:
 			Grupo/Comebacks;
 
 
-	
-		
+
+DUVIDAS:
+
+- Entender como um funciona a url de uma Model criada e como a linkar numa página html
+- Como fazer validação de usuário para somente admins tem acesso as Models
+- Quando há alguma mundança no banco de dados, vários arquivos mudam automaticamente, preciso da push em todas essas mudanças?
+- Como uma Model criada pode ter como atributo uma imagem e mostrar-la na página, html e/ou admin?
+- Como fazer a relação de likes + deslikes e views e implentar isso no projeto, fazer o algoritmo em outra linguagem e usa-lo?
 
 
 
