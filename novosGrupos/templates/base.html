@@ -1,17 +1,40 @@
 <!DOCTYPE html> 
-{% load staticfiles %} 
-<html lang="en">
+
+{% load static %}
+
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylessheet" href="{% static 'css/bootstrap.min.css' %}">
-    <title>{%block title} {%endblock title %}</title>
+
+    <!--Não consegui usar o bootstrap.min.css como arquivo local-->
+    <!-- <link rel="stylessheet" href="{% static 'css/bootstrap.min.css' %}"> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--Título da página que o base.html será usado-->
+    <title>{% block title %} {% endblock title %}</title>
 </head>
+
 <body>
+    <!--Navbar das páginas-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+        <a class="navbar-brand text-white">Grupo</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="admin/grupos/grupo/add/">Adicionar Grupo</a>
+            </li>
+
+        </ul>
+    </nav>
+    
+    <!--Parte da página do base.html que mudará, dependendo de onde for chamado chamado-->
     {% block content %}
     {% endblock content %}
+    <!--Fim do html que o base.html foi chamado-->
 
-
-    <script src="{% static 'js/jquery' %}"></script> 
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script> 
+    <script src="{% static 'js/bootstrap.min.js' %}"></script> 
 </body>
 </html>

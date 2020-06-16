@@ -1,3 +1,71 @@
-<h1>Lista de Clientes</h1>
+<!--Importando o Arquivo base.html-->
+{% extends 'base.html' %}
 
-{{ grupos }}
+<!--Html que será acoplado ao base.html, resultando na página listaDeGrupos-->
+{% block content %}
+
+<!--Início do html próprio de listaDeGrupos.html-->
+<div class="container">
+    <div class="text-center">
+        <h1 class = "text-info">Lista de Grupos</h1>
+    </div>
+
+    <!--Tabela para listagem dos grupos-->
+    <table class="table table-head">
+        <!--Enunciado da tabela-->
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Debut</th>
+                <th>Resumo</th>
+                <!-- <th>Imagem</th> -->
+                <th>Integrantes</th>
+                <th>Comebacks</th>
+                <th>Opções</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <!--Corpo da tabela-->
+        <tbody>
+            <!--Um for de todos os grupos criados-->
+            {% for grupo in grupos %}
+
+                <tr>
+                    <!--Listagem dos atributos do Grupo(n)-->
+                    <td>{{ grupo.nome }}</td>
+                    <td>{{ grupo.debut }}</td>
+                    <td>{{ grupo.resumo }}</td>
+                    <!-- <td>{{ grupo.imagem }}</td> -->
+
+                    <td> 
+                        <!--Pegando o Grupo(n) do momento, filtra-se todos os artistas que tem o Grupo(n) como atributo por Foreign Key-->
+                        {% for artista in grupo.artista_set.all %}
+                            
+                            {{ artista.nome }}
+
+                        {% endfor %}
+                    </td>
+
+                    <td>
+                        <!--Pegando o Grupo(n) do momento, filtra-se todos os comebacks que tem o Grupo(n) como atributo por Foreign Key-->
+                        {% for comeback in grupo.comeback_set.all %}
+                            
+                            {{ comeback.nome }}
+
+                        {% endfor %}
+                    </td>
+
+                    <td><a href="#" class="btn btn-warning">Editar</a></td>
+                    <td><a href="#" class="btn btn-danger">Excluir</a></td>   
+                </tr>
+                
+            {% endfor %}
+        </tbody>
+    </table>
+
+   <!--  {{ grupos }} -->
+</div>
+    
+<!--Início do html de listaDeGrupos.html-->
+{% endblock content %}
