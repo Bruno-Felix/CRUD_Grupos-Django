@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 # Import das models criadas no models.py
-from .models          import Grupo, Artista
+from .models          import Grupo, Artista, Comeback
 from .forms           import GrupoForm
 
 # Create your views here.
@@ -21,6 +21,13 @@ def listaDeArtista(request):
 
     # Vai retornar a renderização de um html listaDeArtistas.html
     return render(request, "grupos/listaDeArtistas.html", {'artistas':artistas})
+
+def listaDeComebacks(request):
+    # Vai instanciar comebacks para receber todos os objetos do tipo Comeback
+    comebacks = Comeback.objects.all().order_by('-id')
+
+    # Vai retornar a renderização de um html listaDeComebacks.html
+    return render(request, "grupos/listaDeComebacks.html", {'comebacks':comebacks})
 
 def criarGrupo(request):
 

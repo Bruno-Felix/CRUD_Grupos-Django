@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="text-center">
+        <h1 class = "text-info">Lista de Comebacks</h1>
+    </div>
+
+    <table class="table table-head table-borderless">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Grupo</th>
+                <th>Data</th>
+                <th>Views</th>
+                <th>Likes</th>
+                <th>Deslikes</th>
+                <th>Opções</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            {% for comeback in comebacks %}
+            <tr>
+                <!--Listagem dos atributos do Grupo(n)-->
+                <td>{{ comeback.nome }}</td>
+                <td>{{ comeback.grupo }}</td>
+                <td>{{ comeback.data }}</td>
+                <td>{{ comeback.views }}</td>
+                <td>{{ comeback.likes }}</td>
+                <td>{{ comeback.deslikes }}</td>
+            </tr>
+
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock content %}
