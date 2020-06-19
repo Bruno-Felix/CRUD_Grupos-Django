@@ -7,24 +7,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Não consegui usar o bootstrap.min.css como arquivo local-->
-    <!-- <link rel="stylessheet" href="{% static 'css/bootstrap.min.css' %}"> -->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Usando booststrap na pasta static-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 
     <!--Título da página que o base.html será usado-->
     <title>{% block title %} {% endblock title %}</title>
 </head>
 
-<body>
+<body class="bg-light">
     <!--Navbar das páginas-->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
-        <a class="navbar-brand text-white" class="nav-link" href="/grupos">Grupo</a>
+        <a class="navbar-brand text-white" class="nav-link" href="/">Kpop</a>
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="/criarGrupo">Adicionar Grupo</a>
+            <li class="nav-item nav-inline">
+                <a class="nav-link" href="/grupos">Grupos</a>
             </li>
-
+            <li>
+                <a class="nav-link" href="/artistas">Artistas</a>
+            </li>
         </ul>
     </nav>
     
