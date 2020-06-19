@@ -1,0 +1,22 @@
+<!--Importando o Arquivo base.html-->
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+<!--Html que será acoplado ao base.html, resultando na página criarGrupos.html-->
+{% block content %}
+<!--Início do html próprio de criarGrupos.html-->
+
+<div class="container">
+    <form action="" method="post"> {% csrf_token %}
+
+        {{ form|crispy }}
+        
+        <input type="submit" class="btn btn-block btn-primary" value="Enviar">
+        <input type="reset"  class="btn btn-block btn-secondary"  value="Limpar">
+    </form>
+    
+</div>
+
+<!--Fim do html de criarGrupos.html-->
+{% endblock content %}
