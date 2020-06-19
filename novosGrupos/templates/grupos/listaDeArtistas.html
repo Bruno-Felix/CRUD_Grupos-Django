@@ -1,41 +1,39 @@
 {% extends 'base.html' %}
 
-
 {% block content %}
 
-    <div class="container">
-        <div class="text-center">
-            <h1 class = "text-info">Lista de Artistas</h1>
-        </div>
-
-        <table class="table table-head">
-
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Grupo</th>
-                    <th>Idade</th>
-                    <th>País</th>
-                    <th>Gênero</th>
-                    <th>Opções</th>
-                    <th></th>
-                </tr>
-            </thead>
-
-            <tbody>
-                {% for artista in artistas %}
-                <tr>
-                    <td>{{ artista.nome }}</td>
-                    <td>{{ artista.grupo }}</td>
-                    <td>{{ artista.idade }}</td>
-                    <td>{{ artista.genero }}</td>
-                    <td>{{ artista.pais }}</td>
-                </tr>
-                
-                {% endfor %}
-            </tbody>
-        </table>
-
-
+<div class="container">
+    <div class="text-center">
+        <h1 class = "text-info">Lista de Artistas</h1>
     </div>
+
+    <table class="table table-head table-borderless">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Grupo</th>
+                <th>Idade</th>
+                <th>País</th>
+                <th>Gênero</th>
+                <th>Opções</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+            {% for artista in artistas %}
+            <tr>
+                <td>{{ artista.nome }}</td>
+                <td>{{ artista.grupo }}</td>
+                <td>{{ artista.idade }}</td>
+                <td>{{ artista.genero }}</td>
+                <td>{{ artista.pais }}</td>
+            </tr>
+            
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
 {% endblock content %}
