@@ -10,7 +10,7 @@ class Grupo(models.Model):
     resumo = models.TextField("Resumo do Grupo")
     #comeback = models.ForeignKey(Comeback, on_delete=models.CASCADE)
     #member = models.ManyToManyField(Integrante, verbose_name="list of sites")
-    imagem = models.ImageField("Foto do Grupo")
+    #imagem = models.ImageField("Foto do Grupo")
 
     def __str__(self):
         return self.nome
@@ -26,7 +26,7 @@ class Artista(models.Model):
                       (u'F', u'Feminino'),)
     genero = models.CharField(max_length=2, verbose_name="Gênero do Artista", choices=GENDER_CHOICES)
     pais = models.CharField("País do Artista", max_length=100)
-    imagem = models.ImageField("Foto do Artista")
+    #imagem = models.ImageField("Foto do Artista")
 
     def __str__(self):
         return self.nome
