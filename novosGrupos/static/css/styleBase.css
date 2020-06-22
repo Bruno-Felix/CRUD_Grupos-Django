@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+body, ul, li, p{
+    height: 100%;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #325c8a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkPrincipal{
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 15px;
+    font-size: 2rem;
+    border-bottom: 3px solid transparent;
+}
+
+.linkPrincipal:hover{
+    color: #DCDCDC;
+    transition: 0.5s;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-right: 15px;
+}
+
+.menu a{
+    cursor: pointer;
+    display: block;
+    padding: 5px 10px;
+}
+
+/* a:link........define o estilo do link no estado inicial;
+a:visited...define o estilo do link visitado;
+a:hover.....define o estilo do link quando passa-se o mouse sobre ele;
+a:active....define o estilo do link ativo (o que foi "clicado") */
+.menu a:hover{
+    background-color: #ffffff;
+    color: #234263;
+    transition: 0.5s;
+}
