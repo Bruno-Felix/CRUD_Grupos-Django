@@ -5,67 +5,19 @@
 {% block content %}
 
 <!--Início do html próprio de listaDeGrupos.html-->
-<div class="container">
-    <div class="text-center">
-        <h1 class = "text-info">Lista de Grupos</h1>
-    </div>
 
-    <!--Tabela para listagem dos grupos-->
-    <table class="table table-head table-borderless">
-        <!--Enunciado da tabela-->
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Debut</th>
-                <!-- <th>Resumo</th> -->
-                <!-- <th>Imagem</th> -->
-                <th>Integrantes</th>
-                <th>Comebacks</th>
-                <th>Opções</th>
-                <th></th>
-            </tr>
-        </thead>
+<h1 class="tituloListaDeGrupos">Lista De Grupos</h1>
 
-        <!--Corpo da tabela-->
-        <tbody>
-            <!--Um for de todos os grupos criados-->
-            {% for grupo in grupos %}
+<section class="flexGrupos">
 
-                <tr>
-                    <!--Listagem dos atributos do Grupo(n)-->
-                    <td>{{ grupo.nome }}</td>
-                    <td>{{ grupo.debut }}</td>
-                    <!-- <td>{{ grupo.resumo }}</td> -->
-                    <!-- <td>{{ grupo.imagem }}</td> -->
+    {% for grupo in grupos %}
 
-                    <td> 
-                        <!--Pegando o Grupo(n) do momento, filtra-se todos os artistas que tem o Grupo(n) como atributo por Foreign Key-->
-                        {% for artista in grupo.artista_set.all %}
-                            
-                            {{ artista.nome }}
+        <div>
+            <h2> {{ grupo.nome}} </h2>
+        </div>
 
-                        {% endfor %}
-                    </td>
+    {% endfor %}
 
-                    <td>
-                        <!--Pegando o Grupo(n) do momento, filtra-se todos os comebacks que tem o Grupo(n) como atributo por Foreign Key-->
-                        {% for comeback in grupo.comeback_set.all %}
-                            
-                            {{ comeback.nome }}
-
-                        {% endfor %}
-                    </td>
-
-                    <td><a href="#" class="btn btn-warning">Editar</a></td>
-                    <td><a href="#" class="btn btn-danger">Excluir</a></td>   
-                </tr>
-                
-            {% endfor %}
-        </tbody>
-    </table>
-
-   <!--  {{ grupos }} -->
-</div>
-    
+</section>
 <!--Fim do html de listaDeGrupos.html-->
 {% endblock content %}
