@@ -1,0 +1,24 @@
+.tituloListaDeComebacks{
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Flexbox da Listagem */
+.flexComebacks{
+    margin: 0 auto;
+    width: 80%; /* Valor da Largura */
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.flexComebacks > div{
+    cursor: pointer;
+    background-color: #cccbcb;
+    flex:1 1 270px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 10px 10px 10px 10px;
+}
