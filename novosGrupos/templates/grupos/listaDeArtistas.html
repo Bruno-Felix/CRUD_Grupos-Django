@@ -2,38 +2,20 @@
 
 {% block content %}
 
-<div class="container">
-    <div class="text-center">
-        <h1 class = "text-info">Lista de Artistas</h1>
+<h1 class="tituloListaDeArtistas">Lista de Artistas</h1>
+
+<section class="flexArtistas">
+
+  {% for artista in artistas %}
+
+    <div>
+      <h2 > {{ artista.nome }} </h2>
+
+      {{ artista.grupo }}
     </div>
 
-    <table class="table table-head table-borderless">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Grupo</th>
-                <th>Idade</th>
-                <th>País</th>
-                <th>Gênero</th>
-                <th>Opções</th>
-                <th></th>
-            </tr>
-        </thead>
+  {% endfor %}
 
-        <tbody>
-            
-            {% for artista in artistas %}
-            <tr>
-                <td>{{ artista.nome }}</td>
-                <td>{{ artista.grupo }}</td>
-                <td>{{ artista.idade }}</td>
-                <td>{{ artista.genero }}</td>
-                <td>{{ artista.pais }}</td>
-            </tr>
-            
-            {% endfor %}
-        </tbody>
-    </table>
-</div>
+</section>
 
 {% endblock content %}
