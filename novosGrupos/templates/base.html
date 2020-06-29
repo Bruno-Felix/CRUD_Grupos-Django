@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Usando booststrap na pasta static-->
-    <!-- <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/styleBase.css' %}">
     <link rel="stylesheet" href="{% static 'css/styleListaDeGrupos.css' %}">
     <link rel="stylesheet" href="{% static 'css/styleListaDeArtistas.css' %}">
@@ -21,14 +21,17 @@
 <body>
     <!--Navbar das páginas-->
     <header class="header">
-        <a class="linkPrincipal" href="/">Kpop</a>
-        <nav>
-            <ul class="menu">
-                <li><a href="/grupos">Grupos</a></li>
-                <li><a href="/artistas">Artistas</a></li>
-                <li><a href="/comebacks">Comebacks</a></li>
-            </ul>
-        </nav>
+        <div class = "divNavBar">
+            <a class="linkPrincipal" href="/">Kpop</a>
+        
+            <nav>
+                <ul class="menu">
+                    <li><a href="/grupos">Grupos</a></li>
+                    <li><a href="/artistas">Artistas</a></li>
+                    <li><a href="/comebacks">Comebacks</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     
