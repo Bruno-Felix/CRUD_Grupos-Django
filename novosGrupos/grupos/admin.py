@@ -6,7 +6,7 @@ from .models        import Grupo, Comeback, Artista
 
 class GrupoAdmin(admin.ModelAdmin):
     # List_display vai mostrar infos desejadas na url /admin/grupos/grupo/, já padrão do admin
-    list_display = ('nome', 'debut')
+    list_display = ('nome', 'debut', 'resumo')
 
 class ArtistaAdmin(admin.ModelAdmin):
     # List_display vai mostrar infos desejadas na url /admin/grupos/artista/, já padrão do admin
