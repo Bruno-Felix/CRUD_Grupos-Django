@@ -13,7 +13,7 @@ body, ul, li, p{
 }
 
 body{
-    background-color: #ffffff;
+    background-color: #f8f8f8;
 }
 
 a{
@@ -21,42 +21,51 @@ a{
     color: #ffffff;
 }
 
-
 .header{
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 100%;
-    background-color: #325c8a;
+    background-color: #191970;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
+.divNavBar{
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    width: 100%;
+}
+
 .linkPrincipal{
+    margin-bottom: 5px;
     cursor: pointer;
-    padding: 10px;
-    margin-left: 15px;
-    font-size: 2rem;
-    border-bottom: 3px solid transparent;
+    font-size: 40px;
+    margin-left: 20px;
 }
 
 .linkPrincipal:hover{
+    text-decoration: none;
     color: #DCDCDC;
     transition: 0.5s;
 }
 
 .menu{
     display: flex;
-}
-
-.menu li{
-    margin-right: 15px;
+    margin-right: 10px;
+    margin-top: 8px;
 }
 
 .menu a{
+    margin-left: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    display: block;
-    padding: 5px 10px;
+    display: flex;
+    padding: 5px 10px 5px 10px;
 }
 
 /* a:link........define o estilo do link no estado inicial;
@@ -64,7 +73,9 @@ a:visited...define o estilo do link visitado;
 a:hover.....define o estilo do link quando passa-se o mouse sobre ele;
 a:active....define o estilo do link ativo (o que foi "clicado") */
 .menu a:hover{
-    background-color: #ffffff;
-    color: #234263;
+    background-color: #F0D652;
+    color: #000000;
+    align-items: center;
+    text-decoration: none;
     transition: 0.5s;
 }
