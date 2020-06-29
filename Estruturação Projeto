@@ -6,20 +6,26 @@ PROJETO X
 
 Ideia Central: Acompanhar a trajetória dos novos grupos de Kpop da "4ª Geração":
 
+CRUD:
+
+ - Criar Grupo, Artista ou Música;
+ - Listar Grupos, Artistas e Músicas;
+ - Atualizar Grupo, Artista e Músicas escolhido;
+ - Deletar Grupo, Artista e Músicas escolhido.
 
 Grupos:
 
-1º - GWSN(2018): 4 comebacks; + 
-2º - Loona(2018): 3 comebacks; +++
-3º - Iz*One(2018): 3 comebacks; ++++  
-4º - (G)-Igle(2018): 6 comebacks; ++++
-5º - BVNDIT(2019): 5 comebacks; +
-6º - Cherry Bullet(2019): 3 comebacks; ++ 
-7º - Rocket Punch(2019): 2 comebacks; ++ 
-8º - Everglow(2019): 3 comebacks; +++
-9º - ITZY(2019): 3 comebacks; ++++
-10º- Secret Number(2020): 1 debut; +
-11º- Natty(2020): 1 debut. ++
+1º - GWSN(2018): 4 comebacks; + ----------OK
+2º - Loona(2018): 3 comebacks; +++ -------OK
+3º - Iz*One(2018): 3 comebacks; ++++ -----OK
+4º - (G)-Igle(2018): 6 comebacks; ++++ ---OK
+5º - BVNDIT(2019): 5 comebacks; + OK -----OK
+6º - Cherry Bullet(2019): 3 comebacks; ++ OK 
+7º - Rocket Punch(2019): 2 comebacks; ++ -OK
+8º - Everglow(2019): 3 comebacks; +++ ----OK
+9º - ITZY(2019): 3 comebacks; ++++ -------OK
+10º- Secret Number(2020): 1 debut; + -----OK
+11º- Natty(2020): 1 debut. ++ ------------OK
 
 Funcionalidades:
 
@@ -85,6 +91,22 @@ DUVIDAS:
 - Como uma Model criada pode ter como atributo uma imagem e mostrar-la na página, html e/ou admin?
 - Como fazer a relação de likes + deslikes e views e implentar isso no projeto, fazer o algoritmo em outra linguagem e usa-lo?
 
+
+
+
+DIFICULDADES:
+
+- Na criação das models, foi complicado entender a relação de muitos para um do Django. Acreditava que podia fazer como uma
+  lista de Objetos, assim um grupo teria x artistas. Porém com o ForeignKey criasse uma relação de, um artista está no grupo x.
+
+- Criação de Objetos pelo forms.ModelForm. Acredito que é mais aconselhável fazer direto no html e retornar esses dados
+  para o Django criar o Objeto. Porém, pelo ModelForm é mais simples para projetos basicos.
+
+- Para um iniciante, ainda não era trivial as rotas do Django, da models para a página html tem um caminho a ser seguido. Aprender
+  isso facilitou o entendimento do framework. models -> views -> urls
+
+- Listar informações desejadas na página do admin. Por padrão, só mostra o nome do objeto daquela models, queria que mostrasse mais
+  informações como grupo de um artista ou resumo de um grupo. list_display, ModelAdmin.
 
 
 
