@@ -1,25 +1,64 @@
+.divBotaoCriarGrupo{
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    width: 100%;
+    margin-top: 90px;
+    padding: 20px;
+}
+
 .tituloListaDeGrupos{
+    align-self: center;
     text-align: center;
-    margin-top: 100px;
+    font-size: 55px;
     font-family: 'Ubuntu', sans-serif;
+}
+
+.botaoCriarGrupo {
+    align-self: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4AA32F;
+    border-radius: 7px;
+    height: 55px;
+    width: 390px;   
+    padding-top: 9px;
+}
+
+.botaoCriarGrupo:hover{
+    background-color: #4AA32F;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 
 /* Flexbox da Listagem */
 .flexGrupos{
-    margin: 0 auto;
-    width: 80%; /* Valor da Largura */
+    margin: 0px auto;
+    width: 100%; /* Valor da Largura */
     display:flex;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1250px;
+    padding: 10px;
 }
 
 .flexGrupos > div{
+    height: 150px;
+    font-size: medium;
     cursor: pointer;
-    background-color: #cccbcb;
-    flex:1 1 270px;
+    flex:1 1 300px;
     text-align: center;
+    border-radius: 5px;
+    border: 1px solid #9aa4b1;
     padding-bottom: 20px;
-    padding-top: 10px;
+    padding-top: 45px;
     margin: 10px 10px 10px 10px;
+}
+
+.flexGrupos > div:hover{
+    background-color: #4AA32F;
+    transition: 0.3s;
+    color: #ffffff;
 }
