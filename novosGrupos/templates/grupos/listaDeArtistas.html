@@ -2,19 +2,27 @@
 
 {% block content %}
 
-<h1 class="tituloListaDeArtistas">Lista de Artistas</h1>
+<div class="divBotaoCriarArtista">
+    <h1 class="tituloListaDeArtistas"><strong>Lista de Artistas</strong></h1>
+    <a class="botaoCriarArtista" href="/criarArtista">Criar Artista</a>
+</div>
 
 <section class="flexArtistas">
 
-  {% for artista in artistas %}
+    {% for artista in artistas %}
 
-    <div>
-      <h2 > {{ artista.nome }} </h2>
+        <div>
+            <h2><strong> {{ artista.nome }} </strong></h2>
 
-      {{ artista.grupo }}
-    </div>
-
-  {% endfor %}
+            {{ artista.grupo }}
+            
+            <div class="divBotoesOpcao">
+                <button class="botaoEditar">Editar</button>
+            
+                <button class="botaoExcluir">Excluir</button>
+            </div>
+        </div>
+    {% endfor %}
 
 </section>
 
