@@ -2,16 +2,19 @@
 
 {% block content %}
 
-<h1 class="tituloListaDeComebacks">Lista de Comebacks</h1>
+<div class="divBotaoCriarComeback">
+    <h1 class="tituloListaDeComebacks"><strong>Lista de Comebacks</strong></h1>
+    <a class="botaoCriarComeback" href="/criarComeback">Criar Comeback</a>
+</div>
 
 <section class="flexComebacks">
 
     {% for comeback in comebacks %}
     
         <div>
-            <h2> {{comeback.nome}} </h2> 
+            <h2><strong> {{ comeback.nome }} </strong></h2>
 
-            {{comeback.grupo}}
+            {{ comeback.grupo }}
         </div>   
 
     {% endfor %}

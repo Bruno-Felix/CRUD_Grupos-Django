@@ -6,14 +6,17 @@
 
 <!--Início do html próprio de listaDeGrupos.html-->
 
-<h1 class="tituloListaDeGrupos">Lista De Grupos</h1>
+<div class="divBotaoCriarGrupo">
+    <h1 class="tituloListaDeGrupos"><strong>Lista de Grupos</strong></h1>
+    <a class="botaoCriarGrupo" href="/criarGrupo">Criar Grupo</a>
+</div>
 
 <section class="flexGrupos">
 
     {% for grupo in grupos %}
 
         <div>
-            <h2> {{ grupo.nome}} </h2>
+            <h2><strong> {{ grupo.nome}} </strong></h2>
         </div>
 
     {% endfor %}
