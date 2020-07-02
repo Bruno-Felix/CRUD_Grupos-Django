@@ -11,11 +11,18 @@
 
     {% for comeback in comebacks %}
     
-        <div>
-            <h2><strong> {{ comeback.nome }} </strong></h2>
+        <div class="Comeback">
+            <div class="infosComeback">
+                <h1><strong> {{ comeback.nome }} </strong></h1>
 
-            {{ comeback.grupo }}
-        </div>   
+                {{ comeback.grupo }}
+            </div>
+                
+            <div class="divBotoesComeback">
+                <a class="botaoEditarComeback" href="#">Editar</a>
+                <a class="botaoExcluirComeback"href="#">Excluir</a>
+            </div>
+        </div>
 
     {% endfor %}
 

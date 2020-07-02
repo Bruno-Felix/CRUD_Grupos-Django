@@ -21,17 +21,20 @@
     text-align: center;
     color: #ffffff;
     background-color: #4AA32F;
-    border-radius: 7px;
+    border-radius: 5px;
     height: 55px;
     width: 390px;   
     padding-top: 9px;
 }
 
 .botaoCriarComeback:hover{
-    background-color: #4AA32F;
+    height: 65px;
+    padding-top: 14px;
+
     color: #ffffff;
     text-decoration: none;
 }
+
 
 /* Flexbox da Listagem */
 .flexComebacks{
@@ -40,24 +43,70 @@
     display:flex;
     flex-wrap: wrap;
     max-width: 1250px;
-    padding: 10px;
+    padding: 12px;
 }
 
-.flexComebacks > div{
-    height: 150px;
+.Comeback{
+    height: 200px;
     font-size: medium;
-    cursor: pointer;
-    flex:1 1 200px;
-    text-align: center;
+    flex:1 1 250px;
     border-radius: 5px;
     border: 1px solid #9aa4b1;
-    padding-bottom: 20px;
-    padding-top: 45px;
     margin: 10px 10px 10px 10px;
 }
 
-.flexComebacks > div:hover{
-    background-color: #4AA32F;
-    transition: 0.3s;
-    color: #ffffff;
+.infosComeback{
+    top: 0;
+    padding-top: 20px;
+    text-align: center;
+    height: 110px;
+}
+
+.divBotoesComeback{
+    height: 90px;
+    top: 0px;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+.botaoEditarComeback{
+    align-self: center;
+    text-align: center;
+    padding-top: 15px;
+    height: 55px;
+    width: 80px;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #FFFB19;
+}
+
+.botaoEditarComeback:hover{
+
+    height: 65px;
+    padding-top: 20px;
+
+    color: #000000;
+    text-decoration: none;
+}
+
+.botaoExcluirComeback{
+    align-self: center;
+    text-align: center;
+    
+    margin-left: 20px;
+    padding-top: 15px;
+    height: 55px;
+    width: 80px;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #ff1a1a;
+}
+
+.botaoExcluirComeback:hover{
+    height: 65px;
+    padding-top: 20px;
+    
+    color: #000000;
+    text-decoration: none;
 }
