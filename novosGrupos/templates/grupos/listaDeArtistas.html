@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<div class="divBotaoCriarArtista">
+<div class="divCabecalhoArtista">
     <h1 class="tituloListaDeArtistas"><strong>Lista de Artistas</strong></h1>
     <a class="botaoCriarArtista" href="/criarArtista">Criar Artista</a>
 </div>
@@ -11,15 +11,16 @@
 
     {% for artista in artistas %}
 
-        <div>
-            <h2><strong> {{ artista.nome }} </strong></h2>
+        <div class ="Artista">
+            <div class="infosArtista">
+                <h1><strong> {{ artista.nome }} </strong></h1>
 
             {{ artista.grupo }}
+            </div>
             
-            <div class="divBotoesOpcao">
-                <button class="botaoEditar">Editar</button>
-            
-                <button class="botaoExcluir">Excluir</button>
+            <div class="divBotoesArtista">
+                <a class="botaoEditarArtista" href="#">Editar</a>
+                <a class="botaoExcluirArtista" href="#">Excluir</a>
             </div>
         </div>
     {% endfor %}

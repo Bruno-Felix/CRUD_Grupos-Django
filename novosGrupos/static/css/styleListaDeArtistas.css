@@ -1,4 +1,4 @@
-.divBotaoCriarArtista{
+.divCabecalhoArtista{
     justify-content: space-between;
     margin: auto;
     display: flex;
@@ -21,14 +21,16 @@
     text-align: center;
     color: #ffffff;
     background-color: #4AA32F;
-    border-radius: 7px;
+    border-radius: 5px;
     height: 55px;
     width: 390px;   
     padding-top: 9px;
   }
 
 .botaoCriarArtista:hover{
-    background-color: #3f8a28;
+    height: 65px;
+    padding-top: 14px;
+
     color: #ffffff;
     text-decoration: none;
 }
@@ -41,55 +43,79 @@
     display:flex;
     flex-wrap: wrap;
     max-width: 1250px;
-    padding: 10px;
+    padding: 12px;
 }
 
-.flexArtistas > div{
-    height: 180px;
+.Artista{
+    height: 200px;
     font-size: medium;
-    cursor: pointer;
-    flex:1 1 210px;
-    text-align: center;
+    flex:1 1 250px;
     border-radius: 5px;
     border: 1px solid #9aa4b1;
-    padding-top: 20px;
     margin: 10px 10px 10px 10px;
 }
 
-/* .flexArtistas > div:hover{
-    background-color: #4AA32F;
+.Artista:hover{
+    /* background-color: #4AA32F; */
     transition: 0.3s;
-    color: #ffffff;
+}
+
+.infosArtista{
+    top: 0;
+    padding-top: 20px;
+    text-align: center;
+    height: 110px;
+}
+
+/* .infosArtista:hover{
+    height: 150px;
 } */
 
-.divBotoesOpcao{
-    padding-top: 25px;
+.divBotoesArtista{
+    height: 90px;
+    top: 0px;
+    justify-content: center; /* Elementos em extremos opostos */
+    width: 100%;
+    display: flex;
 }
 
-.divBotoesOpcao > button{
-    width: 90px;
-}
-
-.botaoEditar{
-    border: none;
+.botaoEditarArtista{
+    align-self: center;
+    text-align: center;
+    padding-top: 15px;
     height: 55px;
+    width: 80px;
     border-radius: 5px;
     color: #000000;
-    background-color: #ffff1a;
+    background-color: #FFFB19;
 }
 
-.botaoEditar:hover{
-    background-color: #e6e600;
+.botaoEditarArtista:hover{
+
+    height: 65px;
+    padding-top: 20px;
+
+    color: #000000;
+    text-decoration: none;
 }
 
-.botaoExcluir{
-    border: none;
+.botaoExcluirArtista{
+    align-self: center;
+    text-align: center;
+    
+    margin-left: 15px;
+    padding-top: 15px;
     height: 55px;
+    width: 80px;
     border-radius: 5px;
-    color: #ffffff;
+    color: #000000;
     background-color: #ff1a1a;
 }
 
-.botaoExcluir:hover{
-    background-color: #e60000;
+.botaoExcluirArtista:hover{
+    height: 65px;
+    padding-top: 20px;
+    
+    color: #000000;
+    text-decoration: none;
 }
