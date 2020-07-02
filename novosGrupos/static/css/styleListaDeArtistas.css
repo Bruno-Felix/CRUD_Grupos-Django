@@ -55,11 +55,6 @@
     margin: 10px 10px 10px 10px;
 }
 
-.Artista:hover{
-    /* background-color: #4AA32F; */
-    transition: 0.3s;
-}
-
 .infosArtista{
     top: 0;
     padding-top: 20px;
@@ -67,14 +62,10 @@
     height: 110px;
 }
 
-/* .infosArtista:hover{
-    height: 150px;
-} */
-
 .divBotoesArtista{
     height: 90px;
     top: 0px;
-    justify-content: center; /* Elementos em extremos opostos */
+    justify-content: center;
     width: 100%;
     display: flex;
 }
@@ -103,7 +94,7 @@
     align-self: center;
     text-align: center;
     
-    margin-left: 15px;
+    margin-left: 20px;
     padding-top: 15px;
     height: 55px;
     width: 80px;
