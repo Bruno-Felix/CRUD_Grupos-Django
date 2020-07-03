@@ -3,79 +3,60 @@
 font-family: 'Ubuntu', sans-serif; */
 
 body, ul, li, p{
+    list-style: none;
     height: 100%;
     min-height: 100%;
     margin: 0px;
     padding: 0px;
-    list-style: none;
-    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
 }
 
 body{
-    background-color: #f8f8f8;
-}
-
-a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #191970;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #ffffff;
 }
 
 .divNavBar{
-    justify-content: space-between;
+    top: 0;
+    max-width: 1250px;
+    width: 89%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    max-width: 1250px;
-    width: 100%;
-}
-
-.linkPrincipal{
-    margin-bottom: 5px;
-    cursor: pointer;
-    font-size: 40px;
-    margin-left: 20px;
-}
-
-.linkPrincipal:hover{
-    text-decoration: none;
-    color: #DCDCDC;
-    transition: 0.5s;
+    border-bottom: 1px solid #e2e6e9;
 }
 
 .menu{
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     display: flex;
-    margin-right: 10px;
-    margin-top: 8px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .menu a{
-    margin-left: 16px;
-    border-radius: 5px;
-    cursor: pointer;
+    align-items: center;
+    text-align: center;
     display: flex;
-    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    height: 45px;
+    padding: 0px 10px 0 10px;
+    font-size: 25px;
+    color: #000000;
+    border-radius: 7px;
+    
 }
 
+.menu a:hover{
+    text-decoration: none;
+    align-items: center;
+    color: #ffffff;
+    background-color: #4AA32F;
+    transition: 0.2s;
+}
 /* a:link........define o estilo do link no estado inicial;
 a:visited...define o estilo do link visitado;
 a:hover.....define o estilo do link quando passa-se o mouse sobre ele;
 a:active....define o estilo do link ativo (o que foi "clicado") */
-.menu a:hover{
-    background-color: #F0D652;
-    color: #000000;
-    align-items: center;
-    text-decoration: none;
-    transition: 0.5s;
-}
