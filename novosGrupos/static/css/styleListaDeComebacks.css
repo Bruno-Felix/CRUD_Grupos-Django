@@ -47,6 +47,7 @@
 .Comeback{
     height: 200px;
     background-color: #f3f2f2;
+    border-bottom: 1px solid #dde2e6;
     font-size: medium;
     flex:1 1 250px;
     border-radius: 7px;
