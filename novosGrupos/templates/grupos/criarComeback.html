@@ -6,16 +6,15 @@
 {% block content %}
 <!--Início do html próprio de criarGrupos.html-->
 
-<div style="margin-top: 110px" class="container bg-light" >
-  <form action="" method="post"> {% csrf_token %}
+<div style="max-width: 1250px; margin: auto; padding: 20px; ">
+    <h1 style="margin-top: 20px; font-size: 45px;"><strong>Criar Comeback</strong></h1>
+    <form style="border-radius: 7px; padding: 20px 15px 0px 15px;background-color: #f3f2f2; margin-top: 50px; " action="" method="post"> {% csrf_token %}
 
-    <h1 style="text-align: center;"><strong>Criar Comeback</strong></h1>
-
-    {{ form|crispy }}
+        {{ form|crispy }}
     
-    <input type="submit" class="btn btn-block btn-outline-success btn-lg" value="Enviar">
-    <input type="reset"  class="btn btn-block btn-outline-dark"  value="Limpar">   
-  </form>
+        <input type="submit" class="btn btn-block btn-outline-success btn-lg" value="Enviar">
+        <input type="reset"  class="btn btn-block btn-outline-dark"  value="Limpar">   
+    </form>
 </div>
 
 <!--Fim do html de criarGrupos.html-->

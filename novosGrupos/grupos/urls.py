@@ -4,7 +4,7 @@ from.views       import listaDeGrupos, listaDeArtista, listaDeComebacks, criarGr
 
 urlpatterns = [
     # A url /grupos vai chamar a view listaDeGrupos da views.py, que por sua vez, vai renderizar a página listaDeGrupos.html
-    path('', index),
+    path('', listaDeGrupos, name="listaDeGrupos"),
     path('grupos', listaDeGrupos, name="listaDeGrupos"),
     path('artistas', listaDeArtista, name="listaDeArtistas"),
     path('comebacks', listaDeComebacks, name="listaDeComebacks"), 

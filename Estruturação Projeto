@@ -8,10 +8,22 @@ Ideia Central: Acompanhar a trajetória dos novos grupos de Kpop da "4ª Geraç�
 
 CRUD:
 
- - Criar Grupo, Artista ou Música;
- - Listar Grupos, Artistas e Músicas;
- - Atualizar Grupo, Artista e Músicas escolhido;
- - Deletar Grupo, Artista e Músicas escolhido.
+ - Criar:
+   - Grupo; FEITO/ CSS
+   - Artista; FEITO/ CSS
+   - Música. FEITO/ CSS
+ - Listar:
+   - Grupo; FEITO/ CSS/ FINALIZADO
+   - Artista; FEITO/ CSS/ FINALIZADO
+   - Música. FEITO/ CSS/ FINALIZADO
+ - Atualizar:
+   - Grupo;
+   - Artista;
+   - Música.
+ - Deletar:
+   - Grupo;
+   - Artista;
+   - Música.
 
 Grupos:
 
@@ -108,5 +120,9 @@ DIFICULDADES:
 - Listar informações desejadas na página do admin. Por padrão, só mostra o nome do objeto daquela models, queria que mostrasse mais
   informações como grupo de um artista ou resumo de um grupo. list_display, ModelAdmin.
 
+
+Ambiente:
+Python 3.8.2
+virtualenv 20.0.25
 
 
