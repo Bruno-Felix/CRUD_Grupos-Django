@@ -1,0 +1,107 @@
+.divCabecalhoGrupos{
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.tituloListaDeGrupos{
+    color: #090431;
+    align-self: center;
+    text-align: center;
+    font-size: 45px;
+}
+
+.botaoCriarGrupo {
+    align-self: center;
+    text-align: center;
+    height: 45px;
+    width: 290px;   
+    padding-top: 3px;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #ff2200;
+    border-radius: 7px;
+}
+
+.botaoCriarGrupo:hover{
+    background-color: #cc1b00;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* Flexbox da Listagem */
+.flexGrupos{
+    margin: 0px auto;
+    width: 100%; /* Valor da Largura */
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    padding: 12px;
+}
+
+.Grupo{
+    height: 200px;
+    border: 1px solid #c4cdd4;
+    font-size: medium;
+    flex:1 1 250px;
+    border-radius: 7px;
+    /* border: 1px solid #e2e6e9; */
+    margin: 10px 10px 10px 10px;
+}
+
+.infosGrupo{
+    color: #090431;
+    top: 0;
+    padding-top: 30px;
+    text-align: center;
+    height: 155px;
+}
+
+.divBotoesGrupo{
+    height: 45px;
+    top: 0px;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    /* font-size: 16px; */
+}
+
+.botaoVisualizarGrupo{
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    height: 45px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: #090431;
+    background-color: #c4cdd4;
+}
+
+.botaoVisualizarGrupo:hover{
+    color: #ffffff;
+    background-color: #ff2200;
+    text-decoration: none;
+}
+
+/* .botaoExcluirGrupo{
+    align-self: center;
+    text-align: center;
+    margin-left: 20px;
+    height: 45px;
+    padding: 10px 15px 0 15px;
+    border-radius: 7px;
+    color: #000000;
+    border: 1px solid #ff1a1a;
+}
+
+.botaoExcluirGrupo:hover{
+    color: #ffffff;
+    background-color: #e60000;
+    text-decoration: none;
+} */

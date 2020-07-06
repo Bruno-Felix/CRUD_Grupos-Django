@@ -1,0 +1,35 @@
+<!--Importando o Arquivo base.html-->
+{% extends 'base.html' %}
+
+<!--Título da página-->
+{% block title %} Grupos {% endblock title %}
+
+<!--Html que será acoplado ao base.html, resultando na página listaDeGrupos-->
+{% block content %}
+
+<!--Início do html próprio de listaDeGrupos.html-->
+
+<div class="divCabecalhoGrupos">
+    <h1 class="tituloListaDeGrupos"><strong>Grupos</strong></h1>
+    <a class="botaoCriarGrupo" href="/criarGrupo">Criar Grupo</a>
+</div>
+
+<section class="flexGrupos">
+
+    {% for grupo in grupos %}
+
+    <div class ="Grupo">
+        <div class="infosGrupo">
+                <h1><strong> {{ grupo.nome}} </strong></h1>
+            </div>
+
+            <div class="divBotoesGrupo">
+                <a class="botaoVisualizarGrupo" href="/visualizarGrupo/{{ grupo.id }}">Visualizar</a>
+            </div>
+        </div>
+        
+    {% endfor %}
+
+</section>
+<!--Fim do html de listaDeGrupos.html-->
+{% endblock content %}
