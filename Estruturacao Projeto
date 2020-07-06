@@ -1,0 +1,130 @@
+
+PROJETO X
+
+
+Ideia Central: Acompanhar a trajetória dos novos grupos de Kpop da "4ª Geração":
+
+
+5W2H:
+
+O que será feito? Descrição do produto (What).
+- Um CRUD de Grupos de Kpop que disputaram o MAMA por Best New Artist (Female);
+ 
+Por que será feito? Razão de existência do produto (Why).
+- Forma de inserção ao Django e as ferramentas clássidas de Desenvolvimento Web(HTML, CSS e JS).
+- Forma de iniciar no desenvolvimentos Web usando um assunto novo de que consumo e acompanho a quase 1 ano.
+
+Onde será feito? Local onde é feito o desenvolvimento (Where).
+- Em casa, durante a pandemia do COVID-19
+
+Quando será feito? Datas, prazos (When).
+- Sem datas e prazos pra a realização do projeto. Com foco no estudo, o tempo gasto em entender melhor as ferramentas usadas sempre é bom para o aprendizado das mesmas.
+
+Quem irá fazer? Responsáveis pelo produto (Who).
+- Bruno Félix, vulgo eu.
+
+Como será feito? Metodologia, processos envolvidos (How).
+- Comprei um curso básido na plataforma Udemy. O projeto desenvolvido lá também é um CRUD, mas muito básido. Quero investir mais nas relações entre as Models, e num trabalho mais elaborado do HTML e CSS.
+
+Quanto irá custar? Custo de desenvolvimento, despesas envolvidas (How much).
+- O custo do curso foi de R$25,99, o restante do aprendizado e da pesquisa vem da internet gratuitamente.
+
+----------------------------------------------------------
+
+Funcionalidades:
+
+- Criar Grupo, seus artistas e suas músicas;
+- Listar os Grupos criados;
+- Editar todos os Grupos e seus atributos;
+- Excluir um Grupo, e/ou seus artistas e/ou suas músicas.
+
+----------------------------------------------------------
+
+Grupos:
+
+1º - GWSN(2018): 4 comebacks; + ----------OK
+2º - Loona(2018): 3 comebacks; +++ -------OK
+3º - Iz*One(2018): 3 comebacks; ++++ -----OK
+4º - (G)-Igle(2018): 6 comebacks; ++++ ---OK
+5º - BVNDIT(2019): 5 comebacks; + OK -----OK
+6º - Cherry Bullet(2019): 3 comebacks; ++ OK 
+7º - Rocket Punch(2019): 2 comebacks; ++ -OK
+8º - Everglow(2019): 3 comebacks; +++ ----OK
+9º - ITZY(2019): 3 comebacks; ++++ -------OK
+10º- Secret Number(2020): 1 debut; + -----OK
+11º- Natty(2020): 1 debut. ++ ------------OK
+
+----------------------------------------------------------
+
+Atributos:
+
+	Grupo:
+		- Nome;
+		- Resumo;
+		- Foto do Grupo;//RETIRADO
+		- Ano de Debut;
+		
+		- Integrantes:
+			- Nome;
+			- Foto;//RETIRADO
+			- Idade;
+			- País de Origem;
+
+		- Comebacks:
+			- Nome;
+			- Data de lançamento;
+			- Views;
+			- Likes;
+			- Deslikes;
+			- Link do Youtube para o M/V.//Mais ser resolvido por link no HTML
+
+----------------------------------------------------------
+
+Páginas:
+
+	
+  Lista de Grupos//FEITO
+	Grupo/Perfil
+	      Perfil/Intagrante;
+		     Integrante/EditarIntegrante. //FEITO
+		     Integrante/ExcluirIntegrante.
+		
+	      Perfil/Comeback;
+		     Comeback/EditarIntegrante. //FEITO
+	
+----------------------------------------------------------
+
+DUVIDAS:
+
+- Entender como um funciona a url de uma Model criada e como a linkar numa página html;
+- Como fazer validação de usuário para somente admins tem acesso as Models;
+- Quando há algumas mundanças no projeto, vários arquivos mudam automaticamente, preciso da push em todas essas mudanças?
+- Como uma Model criada pode ter como atributo uma imagem e mostrar-la na página html e/ou admin?
+
+----------------------------------------------------------
+
+DIFICULDADES:
+
+- Na criação das models, foi complicado entender a relação de muitos para um do Django. Acreditava que podia fazer como uma
+  lista de Objetos, assim um grupo teria x artistas. Porém com o ForeignKey criasse uma relação de, um artista está no grupo x.
+
+- Criação de Objetos pelo forms.ModelForm. Acredito que é mais aconselhável fazer direto no html e retornar esses dados
+  para o Django criar o Objeto. Porém, pelo ModelForm é mais simples para projetos basicos.
+
+- Para um iniciante, ainda não era trivial as rotas do Django, da models para a página html tem um caminho a ser seguido. Aprender
+  isso facilitou o entendimento do framework. models -> views -> urls
+
+- Listar informações desejadas na página do admin. Por padrão, só mostra o nome do objeto daquela models, queria que mostrasse mais
+  informações como grupo de um artista ou resumo de um grupo. list_display, ModelAdmin.
+  
+- HTML e CSS por não gerarem "erros" podem dar uma falsa sensação de que foram usadas corretamente, mas quando começei atrabalhar 
+  melhor nelas percebi que boas práticas no uso de divs, classes, grid e flexbox são cruciais para uma páginas do jeito que se o dev pensa.
+
+
+----------------------------------------------------------
+
+Ambiente:
+Python 3.8.2
+virtualenv 20.0.25
+
+
