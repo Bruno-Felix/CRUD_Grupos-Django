@@ -8,14 +8,14 @@ from .forms           import GrupoForm, ArtistaForm, ComebackForm
 def index(request):
     return render(request, "index.html")
 
-def listaDeGrupos(request):
+def Grupos(request):
     # Vai instanciar grupos para receber todos os objetos do tipo Grupo
     grupos = Grupo.objects.all().order_by('-id')
 
-    # Vai retornar a renderização de um html listaDeGrupos.html
-    return render(request, "grupos/listaDeGrupos.html", {'grupos':grupos})
+    # Vai retornar a renderização de um html Grupos.html
+    return render(request, "grupos/grupos.html", {'grupos':grupos})
 
-def listaDeArtista(request):
+def listaDeArtistas(request):
     # Vai instanciar artistas para receber todos os objetos do tipo Artista
     artistas = Artista.objects.all().order_by('-id')
 
@@ -37,7 +37,7 @@ def criarGrupo(request):
         obj = form.save()
         obj.save()
         form = GrupoForm()
-        return redirect('listaDeGrupos')
+        return redirect('Grupos')
     else:
         form = GrupoForm()
 
@@ -78,7 +78,7 @@ def editarGrupo(request, id=None):
         obj = form.save()
         obj.save()
         form = GrupoForm()
-        return redirect('listaDeGrupos')
+        return redirect('Grupos')
     
     return render(request, "grupos/editarGrupo.html", {'form':form})
 
@@ -105,3 +105,10 @@ def editarComeback(request, id=None):
         return redirect('listaDeComebacks')
     
     return render(request, "grupos/editarComeback.html", {'form':form})
+
+
+""" def visualizarGrupo(request, id=None):
+
+    grupo = get_object_or_404(Grupo, id=id)
+
+    return render(request, "grupos/visualizarGrupo.html", {'grupo':grupo}) """

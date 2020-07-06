@@ -1,12 +1,12 @@
 from django.urls import path
 # Import das views criadas em views.py
-from.views       import listaDeGrupos, listaDeArtista, listaDeComebacks, criarGrupo, criarArtista, criarComeback, editarArtista, editarGrupo, editarComeback, index
+from.views       import Grupos, listaDeArtistas, listaDeComebacks, criarGrupo, criarArtista, criarComeback, editarArtista, editarGrupo, editarComeback, index
 
 urlpatterns = [
-    # A url /grupos vai chamar a view listaDeGrupos da views.py, que por sua vez, vai renderizar a página listaDeGrupos.html
-    path('', listaDeGrupos, name="listaDeGrupos"),
-    path('grupos', listaDeGrupos, name="listaDeGrupos"),
-    path('artistas', listaDeArtista, name="listaDeArtistas"),
+    # A url /grupos vai chamar a view Grupos da views.py, que por sua vez, vai renderizar a página Grupos.html
+    path('', Grupos, name="Grupos"),
+    path('grupos', Grupos, name="Grupos"),
+    path('artistas', listaDeArtistas, name="listaDeArtistas"),
     path('comebacks', listaDeComebacks, name="listaDeComebacks"), 
     path('criarGrupo', criarGrupo),
     path('criarArtista', criarArtista),
