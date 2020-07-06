@@ -22,7 +22,7 @@ body{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 1px solid #c5cdd3;
+    border-bottom: 1px solid #c4cdd4;
 }
 
 .menu{
@@ -44,16 +44,15 @@ body{
     height: 45px;
     padding: 0px 10px 0 10px;
     font-size: 25px;
-    color: #000000;
+    color: #090431;
     border-radius: 7px;
-    
 }
 
 .menu a:hover{
     text-decoration: none;
     align-items: center;
     color: #ffffff;
-    background-color: #4AA32F;
+    background-color: #090431;
     transition: 0.2s;
 }
 /* a:link........define o estilo do link no estado inicial;
