@@ -107,8 +107,8 @@ def editarComeback(request, id=None):
     return render(request, "grupos/editarComeback.html", {'form':form})
 
 
-""" def visualizarGrupo(request, id=None):
+def visualizarGrupo(request, id=None):
 
     grupo = get_object_or_404(Grupo, id=id)
 
-    return render(request, "grupos/visualizarGrupo.html", {'grupo':grupo}) """
+    return render(request, "grupos/visualizarGrupo.html", {'grupo':grupo})
