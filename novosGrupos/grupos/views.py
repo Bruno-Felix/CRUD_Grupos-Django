@@ -110,5 +110,7 @@ def editarComeback(request, id=None):
 def visualizarGrupo(request, id=None):
 
     grupo = get_object_or_404(Grupo, id=id)
+    artistas = Artista.objects.all().order_by('-id')
+    comebacks = Comeback.objects.all().order_by('-id')
 
-    return render(request, "grupos/visualizarGrupo.html", {'grupo':grupo})
+    return render(request, "grupos/visualizarGrupo.html", {'grupo':grupo, 'artistas':artistas, 'comebacks':comebacks})
