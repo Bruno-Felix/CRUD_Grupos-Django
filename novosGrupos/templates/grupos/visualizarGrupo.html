@@ -12,15 +12,6 @@
             <h1><strong> {{ grupo.nome}} </strong></h1><br>
             <strong> Nome do Debut:</strong> {{ grupo.debut }} <br><br>
             <strong> Resumo:</strong><p> {{ grupo.resumo }}</p>
-
-            {% for grupo in grupos %}
-                1
-            {% endfor %}
-            <!-- {% for artista in grupo.artista_set.all %}
-                    
-                    {{ artista.nome }}
-                
-            {% endfor %} -->
         </div>
 
         <div class="grupoVObjetos">
@@ -28,21 +19,19 @@
                 <h1><strong>Artistas</strong></h1>
                 <ul>
                     <!-- Artistas -->   
-                    <li>abc</li>
-                    <li>abc</li>
-                    <li>abc</li>
-                    <li>abc</li>
+                    {% for artista in grupo.artista_set.all %}
+                        <li> {{ artista.nome }} </li>
+                    {% endfor %}
                 </ul>
             </div>
             
             <div class="grupoVObjetoComebacks">
                 <h1><strong>Músicas</strong></h1>
                 <ul>
-                    <!-- Artistas -->
-                    <li>abc</li>
-                    <li>abc</li>
-                    <li>abc</li>
-                    <li>abc</li>
+                    <!-- Comebacks -->   
+                    {% for comeback in grupo.comeback_set.all %}
+                        <li> {{ comeback.nome }} </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
