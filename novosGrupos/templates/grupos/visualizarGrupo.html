@@ -4,39 +4,52 @@
 
 {% block content %}
 
-<section class="sectionVisualizar">
+<section class="sectionVisualizar">   
     <div class="divVisualizar">
-
         <div class="grupoVInformacoes">
-            <!-- <h1 class="nomeGrupoV"><strong> {{ grupo.nome }} </strong></h1>-->
             <h1><strong> {{ grupo.nome}} </strong></h1><br>
-            <strong> Nome do Debut:</strong> {{ grupo.debut }} <br><br>
+            <strong> Nome do Debut:</strong> <span class="spanDataDebut">{{ grupo.debut }} </span><br><br>
             <strong> Resumo:</strong><p> {{ grupo.resumo }}</p>
+<!--             <a class="botaoEditarVGrupo" href="/editarGrupo/{{ grupo.id }}">Editar</a>  -->
         </div>
 
         <div class="grupoVObjetos">
             <div class="grupoVObjetoArtistas">
-                <h1><strong>Artistas</strong></h1>
-                <ul>
-                    <!-- Artistas -->   
+                <h1><strong>Artistas</strong></h1><br>
+                <div class="gridObjetos">
+
                     {% for artista in grupo.artista_set.all %}
-                        <li> {{ artista.nome }} </li>
+
+                        <a href="#"> {{ artista.nome }} </a>
+                    
                     {% endfor %}
-                </ul>
+
+                </div>  
             </div>
             
             <div class="grupoVObjetoComebacks">
-                <h1><strong>Músicas</strong></h1>
-                <ul>
-                    <!-- Comebacks -->   
+                <h1><strong>Músicas</strong></h1><br>
+                <div class="gridObjetos">   
+
                     {% for comeback in grupo.comeback_set.all %}
-                        <li> {{ comeback.nome }} </li>
+
+                        <a href="#"> {{ comeback.nome }} </a>
+
                     {% endfor %}
-                </ul>
+
+                </div>
             </div>
         </div>
-
     </div>
 </section>
 
 {% endblock content %}
+
+
+<!-- <h1><strong>Artistas</strong></h1>
+                <ul>
+                     Artistas
+                    {% for artista in grupo.artista_set.all %}
+                        <li> {{ artista.nome }} </li>
+                    {% endfor %}
+                </ul> -->
