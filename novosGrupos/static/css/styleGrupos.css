@@ -9,6 +9,12 @@
     padding: 20px;
 }
 
+@media only screen and (max-width:600px){
+    .divCabecalhoGrupos{
+        flex-direction: column;
+    }
+}
+
 .tituloListaDeGrupos{
     color: #090431;
     align-self: center;
@@ -20,12 +26,22 @@
     align-self: center;
     text-align: center;
     height: 45px;
-    width: 290px;   
+    width: 50%;   
     padding-top: 3px;
     font-size: 25px;
     color: #ffffff;
     background-color: #ff2200;
     border-radius: 7px;
+}
+
+@media only screen and (max-width:600px){
+    .tituloListaDeGrupos{
+        margin: auto;
+    }
+    .botaoCriarGrupo{
+        margin: 30px auto;
+        width: 100%;
+    }
 }
 
 .botaoCriarGrupo:hover{
