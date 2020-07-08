@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ grupo.nome }} {% endblock title %}
+
+{% block content %}
+
+<section class="sectionVisualizar">
+    <div class="divVisualizar">
+
+        <div class="grupoVInformacoes">
+            <!-- <h1 class="nomeGrupoV"><strong> {{ grupo.nome }} </strong></h1>-->
+            <h1><strong> {{ grupo.nome}} </strong></h1><br>
+            <strong> Nome do Debut:</strong> {{ grupo.debut }} <br><br>
+            <strong> Resumo:</strong><p> {{ grupo.resumo }}</p>
+
+            {% for grupo in grupos %}
+                1
+            {% endfor %}
+            <!-- {% for artista in grupo.artista_set.all %}
+                    
+                    {{ artista.nome }}
+                
+            {% endfor %} -->
+        </div>
+
+        <div class="grupoVObjetos">
+            <div class="grupoVObjetoArtistas">
+                <h1><strong>Artistas</strong></h1>
+                <ul>
+                    <!-- Artistas -->   
+                    <li>abc</li>
+                    <li>abc</li>
+                    <li>abc</li>
+                    <li>abc</li>
+                </ul>
+            </div>
+            
+            <div class="grupoVObjetoComebacks">
+                <h1><strong>Músicas</strong></h1>
+                <ul>
+                    <!-- Artistas -->
+                    <li>abc</li>
+                    <li>abc</li>
+                    <li>abc</li>
+                    <li>abc</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% endblock content %}
