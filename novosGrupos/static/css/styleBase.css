@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 /* font-family: 'Montserrat', sans-serif;
-font-family: 'Ubuntu', sans-serif; */
+font-family: 'Ubuntu', sans-serif; 
+font-family: 'Lora', serif;
+*/
 
 body, ul, li, p{
     list-style: none;
