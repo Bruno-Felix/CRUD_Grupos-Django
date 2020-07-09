@@ -1,21 +1,21 @@
 .sectionVisualizar{
     max-width: 1250px;
     width: 100%;
-    margin: 30px auto;
+    margin: auto;
     height: 500px;
-    padding: 22px;
+    padding: 50px 22px;
     display: flex;
     flex-wrap: wrap;
 }
 
-/* .botaoEditarVGrupo{
+.botaoEditarVGrupo{
     text-align: center;
     width: 100%;
     padding-top: 3px;
-    margin-bottom: 0;
     height: 45px;
     font-size: 25px;
-    border-radius: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
     color: #ffffff;
     background-color: #ff2200;
 }
@@ -24,12 +24,13 @@
     color: #ffffff;
     background-color: #cc1b00;
     text-decoration: none;
-} */
+}
 
 .divVisualizar{
     width: 100%;
     background-color: #c4cdd4;
-    border-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -61,6 +62,7 @@
 .grupoVInformacoes > p{
     text-align: justify;
     line-height: 27px;
+    height: 250px;
     font-family: 'Lora', serif;
     color: #2c2c2c;
 }
