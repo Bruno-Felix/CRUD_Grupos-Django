@@ -1,4 +1,4 @@
-.sectionVisualizar{
+.sectionVGrupo{
     max-width: 1250px;
     width: 100%;
     margin: auto;
@@ -26,7 +26,7 @@
     text-decoration: none;
 }
 
-.divVisualizar{
+.divViGrupo{
     width: 100%;
     background-color: #c4cdd4;
     border-bottom-left-radius: 7px;
