@@ -114,3 +114,9 @@ def visualizarGrupo(request, id=None):
     comebacks = Comeback.objects.all().order_by('-id')
 
     return render(request, "grupos/visualizarGrupo.html", {'grupo':grupo, 'artistas':artistas, 'comebacks':comebacks})
+
+def visualizarArtista(request, id=None):
+
+    artista = get_object_or_404(Artista, id=id)
+
+    return render(request, "grupos/visualizarArtista.html", {'artista':artista})
