@@ -1,0 +1,81 @@
+.sectionVArtista{
+    max-width: 1250px;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding: 50px 22px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.botaoEditarVArtista{
+    text-align: center;
+    width: 100%;
+    padding-top: 3px;
+    height: 45px;
+    font-size: 25px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: #ffffff;
+    background-color: #ff2200;
+}
+
+.botaoEditarVArtista:hover{
+    color: #ffffff;
+    background-color: #cc1b00;
+    text-decoration: none;
+}
+
+.divVArtista{
+    width: 100%;
+    background-color: #c4cdd4;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 20px;
+}
+
+.artistaVInformacoes{
+    color: #090431;
+    border-radius: 7px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.artistaVInformacoes > span{
+    margin-right: 40px;
+    font-family: 'Lora', serif;
+    color: #2c2c2c;
+}
+
+.artistaVInformacoes > a{
+    border-radius: 7px;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Lora', serif;
+    color: #090431;
+    background-color: #c4cdd4;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 40px 0 5px;
+}
+
+.artistaVInformacoes > a:hover{
+    color: #ffffff;
+    background-color: #ff2200;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:750px){
+    .artistaVInformacoes > span{
+        margin-right: 0;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .artistaVInformacoes > a{
+        display: block;
+        margin: 0 0 20px 0;
+    }
+}
+
