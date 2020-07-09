@@ -2,7 +2,7 @@
     max-width: 1250px;
     width: 100%;
     margin: auto;
-    height: 500px;
+    height: auto;
     padding: 50px 22px;
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +26,7 @@
     text-decoration: none;
 }
 
-.divViGrupo{
+.divVGrupo{
     width: 100%;
     background-color: #c4cdd4;
     border-bottom-left-radius: 7px;
@@ -37,7 +37,7 @@
 }
 
 @media only screen and (max-width:900px){
-    .divVisualizar{
+    .divVGrupo{
         flex-direction: column;
         margin-top: 0;
     }
@@ -62,7 +62,7 @@
 .grupoVInformacoes > p{
     text-align: justify;
     line-height: 27px;
-    height: 250px;
+    height: auto;
     font-family: 'Lora', serif;
     color: #2c2c2c;
 }
