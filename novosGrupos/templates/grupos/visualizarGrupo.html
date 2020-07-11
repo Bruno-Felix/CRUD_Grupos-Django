@@ -33,7 +33,7 @@
 
                     {% for comeback in grupo.comeback_set.all %}
 
-                        <a href="#"> {{ comeback.nome }} </a>
+                        <a href="/visualizarComeback/{{ comeback.id }}"> {{ comeback.nome }} </a>
 
                     {% endfor %}
 
