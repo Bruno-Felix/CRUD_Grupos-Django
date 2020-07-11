@@ -120,3 +120,9 @@ def visualizarArtista(request, id=None):
     artista = get_object_or_404(Artista, id=id)
 
     return render(request, "grupos/visualizarArtista.html", {'artista':artista})
+
+def visualizarComeback(request, id=None):
+
+    comeback = get_object_or_404(Comeback, id=id)
+
+    return render(request, "grupos/visualizarComeback.html", {'comeback':comeback})
