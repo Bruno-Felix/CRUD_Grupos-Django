@@ -40,7 +40,6 @@
     width: 100%;
     background-color: #ffffff;
     padding: 20px;
-    border: 1px solid black;
 }
 
 .comebackVInformacoes > span{
@@ -66,7 +65,7 @@
     text-decoration: none;
 }
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1050px){
     .comebackVInformacoes > span{
         margin-right: 0;
         display: block;
