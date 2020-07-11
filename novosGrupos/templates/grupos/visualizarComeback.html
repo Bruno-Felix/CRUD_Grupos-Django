@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ comeback.nome }} {% endblock title %}
+
+{% block content %}
+
+<section class="sectionVComeback">   
+    <a class="botaoEditarVComeback" href="/editarComeback/{{ comeback.id }}">Editar</a>
+    <div class="divVComeback">
+        <div class="comebackVInformacoes">
+            <h1><strong> {{ comeback.nome}} </strong></h1><br>
+            <strong>Grupo:</strong><a href="/visualizarGrupo/{{ comeback.grupo.id }}"> {{ comeback.grupo.nome }} </a>
+            <strong>Data:</strong> <span>{{ comeback.data}}</span>
+            <strong>Views:</strong> <span>{{ comeback.views}}</span>
+            <strong>Likes:</strong> <span>{{ comeback.likes}} </span>
+            <strong>Deslikes:</strong> <span>{{ comeback.deslikes}} </span>
+        </div>  
+    </div>
+</section>
+
+{% endblock content %}
