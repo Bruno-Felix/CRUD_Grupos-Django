@@ -100,7 +100,10 @@
 
 .gridObjetos{
     display: grid;
-    grid-template-columns: 50% 50%;
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
    /*  grid-template-columns: 100px 100px;
     border: 1px solid red; */
 }
@@ -113,11 +116,30 @@
     color: #090431;
     background-color: #c4cdd4;
     text-align: center;
-    margin: 5px;
 }
 
 .gridObjetos > a:hover{
     color: #ffffff;
     background-color: #ff2200;
+    text-decoration: none;
+}
+
+.botaoAdicionar{
+    display: block;
+    border-radius: 7px;
+    text-align: center;
+    height: 45px;
+    color: #ffffff;
+    background-color: #ff2200;
+    text-decoration: none;
+    width: 1fr;
+    padding-top: 3px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.botaoAdicionar:hover{
+    color: #ffffff;
+    background-color: #cc1b00;
     text-decoration: none;
 }
