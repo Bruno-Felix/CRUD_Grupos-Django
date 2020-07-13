@@ -80,7 +80,7 @@ def editarGrupo(request, id=None):
         form = GrupoForm()
         return redirect('Grupos')
     
-    return render(request, "grupos/editarGrupo.html", {'form':form})
+    return render(request, "grupos/editarGrupo.html", {'form':form, 'grupo':grupo})
 
 def editarArtista(request, id=None):
 
@@ -92,7 +92,7 @@ def editarArtista(request, id=None):
         form = ArtistaForm()
         return redirect('listaDeArtistas')
     
-    return render(request, "grupos/editarArtista.html", {'form':form})
+    return render(request, "grupos/editarArtista.html", {'form':form, 'artista':artista})
 
 def editarComeback(request, id=None):
 
@@ -104,7 +104,7 @@ def editarComeback(request, id=None):
         form = ComebackForm()
         return redirect('listaDeComebacks')
     
-    return render(request, "grupos/editarComeback.html", {'form':form})
+    return render(request, "grupos/editarComeback.html", {'form':form, 'comeback':comeback})
 
 
 def visualizarGrupo(request, id=None):
