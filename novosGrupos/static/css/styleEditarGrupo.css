@@ -4,7 +4,7 @@
     padding: 20px; 
 }
 
-.editarTituloDiv{
+.tituloDivEditarGrupo{
     margin-top: 20px; 
     font-size: 45px;
 }
@@ -16,7 +16,7 @@
     margin-top: 50px;
 }
 
-.botaoEditarAtualizar{
+.botaoAtualizarEditarGrupo{
     text-decoration: none;
     box-shadow: 0 0 0 0;
     border: 0 none;
@@ -32,14 +32,14 @@
     background-color: #51b234;
 }
 
-.botaoEditarAtualizar:hover{
+.botaoAtualizarEditarGrupo:hover{
     text-decoration: none;
 
     color: #ffffff;
     background-color: #489e2e;
 }
 
-.botaoEditarVoltar{
+.botaoVoltarEditarGrupo{
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
@@ -51,9 +51,13 @@
     border-radius: 7px;
     margin-bottom: 15px;
 
+    color: #000000;
     background-color: #c5cdd3;
 }
 
-.botaoEditarVoltar:hover{
+.botaoVoltarEditarGrupo:hover{
+    text-decoration: none;
+
+    color: #000000;
     background-color: #a8b4bd;
 }

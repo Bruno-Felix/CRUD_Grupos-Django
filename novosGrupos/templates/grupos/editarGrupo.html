@@ -7,15 +7,15 @@
 {% block content %}
 
 <div class="divEditarGrupo">
-    <h1 class="editarTituloDiv"><strong> Editar Grupo - {{ grupo.nome }} </strong></h1>
+    <h1 class="tituloDivEditarGrupo"><strong> Editar Grupo - {{ grupo.nome }} </strong></h1>
     <form action="" method="post"> 
         
         {% csrf_token %}
 
         {{ form|crispy }}
       
-        <input type="submit" class="botaoEditarAtualizar" value="Atualizar">
-        <input type='button' class="botaoEditarVoltar" value='Voltar' onclick='history.go(-1)' />
+        <input type="submit" class="botaoAtualizarEditarGrupo" value="Atualizar">
+        <input type='button' class="botaoVoltarEditarGrupo" value='Voltar' onclick='history.go(-1)' />
     </form>
 </div>
 
