@@ -5,8 +5,6 @@
 {% block content %}
 
 <section class="sectionVComeback">   
-    <!-- <a class="botaoEditarVComeback" href="/editarComeback/{{ comeback.id }}">Editar</a> -->
-
     <div class="divVComeback">
         <div class="comebackVInformacoes">
             <h1><strong> {{ comeback.nome}} </strong></h1><br>
@@ -22,11 +20,10 @@
             </div>
         </div>  
         <div class="comebackVOpcoes">
-            <div class="divVBotoes">
-                <a class="opcoesVEditar" href="/editarComeback/{{ comeback.id }}">Editar</a>
-                <a class="opcoesVExcluir" href="#">Excluir</a>
+            <div class="divVBotoesComeback">
+                <a class="opcoesVEditarComeback" href="/editarComeback/{{ comeback.id }}">Editar</a>
+                <a class="opcoesVExcluirComeback" href="#">Excluir</a>
             </div>
-            
         </div>
     </div>
 </section>

@@ -35,7 +35,7 @@
     flex-wrap: wrap;
 }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:700px){
     .divVComeback{
         flex-direction: column;
         margin-right: 0;
@@ -63,7 +63,7 @@
     font-family: 'Lora', serif;
     color: #090431;
     border:1px solid #c4cdd4;
-    background-color: #c4cdd4;
+    /* background-color: #c4cdd4; */
     text-align: center;
     text-decoration: none;
     margin: 0 40px 0 5px;
@@ -75,12 +75,13 @@
     text-decoration: none;
 }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:700px){
 
     .comebackVInformacoes{
         margin-right: 0px;
         margin-bottom: 20px;
     }
+    
     .comebackVInformacoes > div > span{
         margin-right: 0;
         display: block;
@@ -100,7 +101,7 @@
     background-color: #ffffff;
 }
 
-.divVBotoes{
+.divVBotoesComeback{
     margin: 60px auto;
     padding: 0 15% 0 15%;
     text-align: center;
@@ -109,7 +110,7 @@
     height: auto;
 }
 
-.opcoesVEditar{
+.opcoesVEditarComeback{
     border-radius: 7px;
     padding-top: 4px;
     height: 45px;
@@ -118,13 +119,13 @@
     color: #000000;
     margin-bottom: 40px;
 }
-.opcoesVEditar:hover{
+.opcoesVEditarComeback:hover{
     color: #000000;
     text-decoration: none;
     background-color: #a6b4bf;
 }
 
-.opcoesVExcluir{
+.opcoesVExcluirComeback{
     border-radius: 7px;
     padding-top: 4px;
     height: 45px;
@@ -132,7 +133,7 @@
     color: #ffffff;
     background-color: #ff1a1a;
 }
-.opcoesVExcluir:hover{
+.opcoesVExcluirComeback:hover{
     text-decoration: none;
     color: #ffffff;
     background-color: #e60000;
