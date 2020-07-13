@@ -1,0 +1,63 @@
+.divEditarArtista{
+    max-width: 1250px; 
+    margin: auto; 
+    padding: 20px; 
+}
+
+.tituloDivEditarArtista{
+    margin-top: 20px; 
+    font-size: 45px;
+}
+
+.divEditarArtista > form{
+    border-radius: 7px; 
+    padding: 20px 15px 0px 15px;
+    background-color: #f3f2f2; 
+    margin-top: 50px;
+}
+
+.botaoAtualizarEditarArtista{
+    text-decoration: none;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    
+    width: 100%;
+    height: 45px;
+    font-size: 25px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    
+    color: #ffffff;
+    background-color: #51b234;
+}
+
+.botaoAtualizarEditarArtista:hover{
+    text-decoration: none;
+
+    color: #ffffff;
+    background-color: #489e2e;
+}
+
+.botaoVoltarEditarArtista{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-bottom: 15px;
+
+    color: #000000;
+    background-color: #c5cdd3;
+}
+
+.botaoVoltarEditarArtista:hover{
+    text-decoration: none;
+
+    color: #000000;
+    background-color: #a8b4bd;
+}
