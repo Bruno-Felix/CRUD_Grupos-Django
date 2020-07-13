@@ -6,15 +6,16 @@
 
 {% block content %}
 
-<div style="max-width: 1250px; margin: auto; padding: 20px; ">
-    <h1 style="margin-top: 20px; font-size: 45px;"><strong>Editar Comeback</strong></h1>
-    <form style="border-radius: 7px; padding: 20px 15px 0px 15px;background-color: #f3f2f2; margin-top: 50px; " action="" method="post"> {% csrf_token %}
+<div class="divEditarComeback">
+    <h1 class="tituloDivEditarComeback"><strong> Editar Comeback - {{ comeback.nome }} </strong></h1>
+    <form action="" method="post"> 
+        
+        {% csrf_token %}
 
         {{ form|crispy }}
       
-        <input type="submit" class="btn btn-block btn-outline-success btn-lg" value="Atualizar">
-        <input type="reset"  class="btn btn-block btn-outline-dark"  value="Limpar">   
+        <input type="submit" class="botaoAtualizarEditarComeback" value="Atualizar">
+        <input type='button' class="botaoVoltarEditarComeback" value='Voltar' onclick='history.go(-1)' />
     </form>
 </div>
-
 {% endblock content %}
