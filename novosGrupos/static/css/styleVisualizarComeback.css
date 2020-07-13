@@ -8,7 +8,7 @@
     flex-wrap: wrap;
 }
 
-.botaoEditarVComeback{
+/* .botaoEditarVComeback{
     text-align: center;
     width: 100%;
     padding-top: 3px;
@@ -24,56 +24,116 @@
     color: #ffffff;
     background-color: #cc1b00;
     text-decoration: none;
-}
+} */
 
 .divVComeback{
     width: 100%;
     background-color: #c4cdd4;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    padding: 20px;
+    border-radius: 7px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width:800px){
+    .divVComeback{
+        flex-direction: column;
+        margin-right: 0;
+    }
 }
 
 .comebackVInformacoes{
+    flex: 3;
+    margin-right: 10px;
     color: #090431;
     border-radius: 7px;
-    width: 100%;
     background-color: #ffffff;
     padding: 20px;
 }
 
-.comebackVInformacoes > span{
+.comebackVInformacoes > div > span{
     margin-right: 40px;
     font-family: 'Lora', serif;
     color: #2c2c2c;
 }
 
-.comebackVInformacoes > a{
+.comebackVInformacoes > div > a{
     border-radius: 7px;
-    padding: 10px 20px 10px 20px;
+    padding: 5px 10px 5px 10px;
     font-family: 'Lora', serif;
     color: #090431;
+    border:1px solid #c4cdd4;
     background-color: #c4cdd4;
     text-align: center;
     text-decoration: none;
     margin: 0 40px 0 5px;
 }
 
-.comebackVInformacoes > a:hover{
+.comebackVInformacoes > div > a:hover{
     color: #ffffff;
     background-color: #ff2200;
     text-decoration: none;
 }
 
-@media only screen and (max-width:1050px){
-    .comebackVInformacoes > span{
+@media only screen and (max-width:800px){
+
+    .comebackVInformacoes{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .comebackVInformacoes > div > span{
         margin-right: 0;
         display: block;
         margin-bottom: 20px;
     }
 
-    .comebackVInformacoes > a{
+    .comebackVInformacoes > div > a{
         display: block;
         margin: 0 0 20px 0;
     }
+}
+
+.comebackVOpcoes{
+    color: #090431;
+    border-radius: 7px;
+    flex: 1;
+    background-color: #ffffff;
+}
+
+.divVBotoes{
+    margin: 60px auto;
+    padding: 0 15% 0 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.opcoesVEditar{
+    border-radius: 7px;
+    padding-top: 4px;
+    height: 45px;
+    font-size: 25px;
+    background-color: #c4cdd4;
+    color: #000000;
+    margin-bottom: 40px;
+}
+.opcoesVEditar:hover{
+    color: #000000;
+    text-decoration: none;
+    background-color: #a6b4bf;
+}
+
+.opcoesVExcluir{
+    border-radius: 7px;
+    padding-top: 4px;
+    height: 45px;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #ff1a1a;
+}
+.opcoesVExcluir:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e60000;
 }
