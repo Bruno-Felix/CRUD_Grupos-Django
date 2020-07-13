@@ -1,10 +1,10 @@
-<!--Importando o Arquivo base.html-->
 {% extends 'base.html' %}
+
+{% block title %} Criar Comeback {% endblock title %}
+
 {% load crispy_forms_tags %}
 
-<!--Html que será acoplado ao base.html, resultando na página criarGrupos.html-->
 {% block content %}
-<!--Início do html próprio de criarGrupos.html-->
 
 <div style="max-width: 1250px; margin: auto; padding: 20px; ">
     <h1 style="margin-top: 20px; font-size: 45px;"><strong>Criar Comeback</strong></h1>
@@ -17,5 +17,4 @@
     </form>
 </div>
 
-<!--Fim do html de criarGrupos.html-->
 {% endblock content %}
