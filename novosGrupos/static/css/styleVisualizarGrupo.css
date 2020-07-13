@@ -31,7 +31,7 @@
     background-color: #c4cdd4;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -50,7 +50,7 @@
     border-radius: 7px;
     flex: 1 1 200px;
     background-color: #ffffff;
-    margin-right: 20px;
+    margin-right: 10px;
     padding: 20px;
 }
 
@@ -70,7 +70,7 @@
 @media only screen and (max-width:900px){
     .grupoVInformacoes{
         margin-right: 0px;
-        margin-bottom: 20px; 
+        margin-bottom: 10px; 
     }
 }
 
@@ -85,7 +85,7 @@
 
 .grupoVObjetoArtistas{
     flex: 1;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 7px;
@@ -102,8 +102,8 @@
     display: grid;
     width: auto;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
    /*  grid-template-columns: 100px 100px;
     border: 1px solid red; */
 }

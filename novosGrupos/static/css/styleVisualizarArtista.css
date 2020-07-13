@@ -79,13 +79,13 @@
 
     .artistaVInformacoes{
         margin-right: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .artistaVInformacoes > div > span{
         margin-right: 0;
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .artistaVInformacoes > div > a{
