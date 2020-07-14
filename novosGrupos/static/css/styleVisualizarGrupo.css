@@ -102,8 +102,6 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 15px;
     grid-row-gap: 10px;
-   /*  grid-template-columns: 100px 100px;
-    border: 1px solid red; */
 }
 
 .gridObjetos > a{

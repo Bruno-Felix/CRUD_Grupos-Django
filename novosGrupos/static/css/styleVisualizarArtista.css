@@ -8,29 +8,11 @@
     flex-wrap: wrap;
 }
 
-/* .botaoEditarVArtista{
-    text-align: center;
-    width: 100%;
-    padding-top: 3px;
-    height: 45px;
-    font-size: 25px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    color: #ffffff;
-    background-color: #ff2200;
-}
-
-.botaoEditarVArtista:hover{
-    color: #ffffff;
-    background-color: #cc1b00;
-    text-decoration: none;
-} */
-
 .divVArtista{
     width: 100%;
     background-color: #c4cdd4;
     border-radius: 7px;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -44,7 +26,7 @@
 
 .artistaVInformacoes{
     flex: 3;
-    margin-right: 10px;
+    margin-right: 5px;
     color: #090431;
     border-radius: 7px;
     background-color: #ffffff;
@@ -71,7 +53,7 @@
 
 .artistaVInformacoes > div > a:hover{
     color: #ffffff;
-    background-color: #ff2200;
+    background-color: #6b8394;
     text-decoration: none;
 }
 
@@ -79,13 +61,13 @@
 
     .artistaVInformacoes{
         margin-right: 0px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .artistaVInformacoes > div > span{
         margin-right: 0;
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .artistaVInformacoes > div > a{
@@ -122,7 +104,7 @@
 .opcoesVEditarArtista:hover{
     color: #000000;
     text-decoration: none;
-    background-color: #a6b4bf;
+    background-color: #6b8394;
 }
 
 .opcoesVExcluirArtista{
