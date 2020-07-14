@@ -14,8 +14,7 @@
     padding-top: 3px;
     height: 45px;
     font-size: 25px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    border-radius: 7px;
     color: #ffffff;
     background-color: #ff2200;
 }
@@ -28,10 +27,10 @@
 
 .divVGrupo{
     width: 100%;
-    background-color: #c4cdd4;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    padding: 10px;
+    background-color: #97a8b4;
+    border-radius: 7px;
+    padding: 5px;
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -39,7 +38,6 @@
 @media only screen and (max-width:900px){
     .divVGrupo{
         flex-direction: column;
-        margin-top: 0;
     }
 }
 
@@ -50,7 +48,7 @@
     border-radius: 7px;
     flex: 1 1 200px;
     background-color: #ffffff;
-    margin-right: 10px;
+    margin-right: 5px;
     padding: 20px;
 }
 
@@ -70,7 +68,7 @@
 @media only screen and (max-width:900px){
     .grupoVInformacoes{
         margin-right: 0px;
-        margin-bottom: 10px; 
+        margin-bottom: 5px; 
     }
 }
 
@@ -85,7 +83,7 @@
 
 .grupoVObjetoArtistas{
     flex: 1;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 7px;
@@ -114,13 +112,13 @@
     height: 40px;
     font-family: 'Lora', serif;
     color: #090431;
-    background-color: #c4cdd4;
+    background-color: #d3dadf;
     text-align: center;
 }
 
 .gridObjetos > a:hover{
     color: #ffffff;
-    background-color: #ff2200;
+    background-color: #97a8b4;
     text-decoration: none;
 }
 
@@ -129,8 +127,8 @@
     border-radius: 7px;
     text-align: center;
     height: 45px;
-    color: #ffffff;
-    background-color: #ff2200;
+    color: #000000;
+    border: 1px solid #ff2200;
     text-decoration: none;
     width: 1fr;
     padding-top: 3px;
@@ -140,6 +138,6 @@
 
 .botaoAdicionar:hover{
     color: #ffffff;
-    background-color: #cc1b00;
+    background-color: #ff2200;
     text-decoration: none;
 }
