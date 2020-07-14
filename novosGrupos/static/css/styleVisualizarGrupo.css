@@ -27,7 +27,7 @@
 
 .divVGrupo{
     width: 100%;
-    background-color: #97a8b4;
+    background-color: #c4cdd4;
     border-radius: 7px;
     padding: 5px;
     margin-top: 10px;
@@ -112,13 +112,13 @@
     height: 40px;
     font-family: 'Lora', serif;
     color: #090431;
-    background-color: #d3dadf;
+    background-color: #c4cdd4;
     text-align: center;
 }
 
 .gridObjetos > a:hover{
     color: #ffffff;
-    background-color: #97a8b4;
+    background-color: #6b8394;
     text-decoration: none;
 }
 
