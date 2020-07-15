@@ -4,19 +4,23 @@
 
 {% block content %}
 
+<li class="divVoltar"><a class="botaoVoltar" href="/grupos">Lista de Grupos</a>
+                      <span> > </span>
+                      <a class="botaoVoltar" href="/visualizarGrupo/{{ comeback.grupo.id }}"> {{ comeback.grupo.nome }} </a></li>
+
 <section class="sectionVComeback">   
     <div class="divVComeback">
         <div class="comebackVInformacoes">
-            <h1><strong> {{ comeback.nome}} </strong></h1><br>
+            <h1><strong> {{ comeback.nome }} </strong></h1><br>
             <div>
                 <strong>Grupo:</strong><a href="/visualizarGrupo/{{ comeback.grupo.id }}"> {{ comeback.grupo.nome }} </a>
-                <strong>Data:</strong> <span>{{ comeback.data}}</span>
+                <strong>Data:</strong><span> {{ comeback.data }} </span>
             </div>
             <br>
             <div>
-                <strong>Views:</strong> <span>{{ comeback.views}}</span>
-                <strong>Likes:</strong> <span>{{ comeback.likes}} </span>
-                <strong>Deslikes:</strong> <span>{{ comeback.deslikes}} </span>
+                <strong>Views:</strong><span> {{ comeback.views }} </span>
+                <strong>Likes:</strong><span> {{ comeback.likes }} </span>
+                <strong>Deslikes:</strong><span> {{ comeback.deslikes}} </span>
             </div>
         </div>  
         <div class="comebackVOpcoes">

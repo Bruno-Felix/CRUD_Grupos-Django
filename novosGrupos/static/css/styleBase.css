@@ -62,3 +62,26 @@ body{
 a:visited...define o estilo do link visitado;
 a:hover.....define o estilo do link quando passa-se o mouse sobre ele;
 a:active....define o estilo do link ativo (o que foi "clicado") */
+
+.divVoltar{
+    max-width: 1250px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 0px 22px;
+}
+
+.divVoltar > span{
+    color: #5c5c5c;
+    font-size: 15px;
+}
+
+.botaoVoltar{
+    color: #5c5c5c;
+    font-size: 15px;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.botaoVoltar:hover{
+    color: #090431;
+}

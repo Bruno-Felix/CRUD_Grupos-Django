@@ -4,13 +4,15 @@
 
 {% block content %}
 
+<li class="divVoltar"><a class="botaoVoltar" href="/grupos">Lista de Grupos</a></li>
+
 <section class="sectionVGrupo">   
     <a class="botaoEditarVGrupo" href="/editarGrupo/{{ grupo.id }}">Editar Grupo</a>
     <div class="divVGrupo">
         <div class="grupoVInformacoes">
             <h1><strong> {{ grupo.nome}} </strong></h1><br>
-            <strong> Ano do Debut:</strong> <span class="spanDataDebut">{{ grupo.debut }} </span><br><br>
-            <strong> Resumo:</strong><p> {{ grupo.resumo }}</p>
+            <strong> Ano do Debut:</strong> <span class="spanDataDebut"> {{ grupo.debut }} </span><br><br>
+            <strong> Resumo:</strong><p> {{ grupo.resumo }} </p>
         </div>
 
         <div class="grupoVObjetos">
@@ -48,12 +50,3 @@
 </section>
 
 {% endblock content %}
-
-
-<!-- <h1><strong>Artistas</strong></h1>
-                <ul>
-                     Artistas
-                    {% for artista in grupo.artista_set.all %}
-                        <li> {{ artista.nome }} </li>
-                    {% endfor %}
-                </ul> -->
