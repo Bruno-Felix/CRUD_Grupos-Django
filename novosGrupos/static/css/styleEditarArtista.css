@@ -12,6 +12,7 @@
 .divEditarArtista > form{
     border-radius: 7px; 
     padding: 20px 15px 0px 15px;
+    font-weight: bold;
     background-color: #f3f2f2; 
     margin-top: 50px;
 }
