@@ -67,7 +67,6 @@
     font-size: medium;
     flex:1 1 250px;
     border-radius: 7px;
-    /* border: 1px solid #e2e6e9; */
     margin: 10px 10px 10px 10px;
 }
 
@@ -85,7 +84,6 @@
     justify-content: center;
     width: 100%;
     display: flex;
-    /* font-size: 16px; */
 }
 
 .botaoVisualizarGrupo{
@@ -104,20 +102,3 @@
     background-color: #ff2200;
     text-decoration: none;
 }
-
-/* .botaoExcluirGrupo{
-    align-self: center;
-    text-align: center;
-    margin-left: 20px;
-    height: 45px;
-    padding: 10px 15px 0 15px;
-    border-radius: 7px;
-    color: #000000;
-    border: 1px solid #ff1a1a;
-}
-
-.botaoExcluirGrupo:hover{
-    color: #ffffff;
-    background-color: #e60000;
-    text-decoration: none;
-} */
