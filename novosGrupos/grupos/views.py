@@ -126,3 +126,25 @@ def visualizarComeback(request, id=None):
     comeback = get_object_or_404(Comeback, id=id)
 
     return render(request, "grupos/visualizarComeback.html", {'comeback':comeback})
+
+
+def excluirGrupo(request, id=None):
+
+    grupo = get_object_or_404(Grupo, id=id)
+
+    if request.method == "POST":
+        for artista in grupo.artista_set.all():
+            artista.delete()
+
+        for comeback in grupo.comeback_set.all():
+            comeback.delete()
+
+        grupo.delete()
+        return redirect('Grupos')
+
+    return render(request, "grupos/excluirGrupo.html", {'grupo':grupo})
+""" def excluirArtista(request, id=None):
+
+
+def excluirComeback(request, id=None):
+ """

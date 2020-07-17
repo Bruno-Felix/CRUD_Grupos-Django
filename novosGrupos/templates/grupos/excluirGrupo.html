@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} Editar - {{ grupo.nome }} {% endblock title %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <h1 class="tituloDivEditarGrupo"><strong> Tem Certeza que deseja Excluir {{ grupo.nome }} ?</strong></h1>
+    
+    <input type="submit" class="botaoAtualizarEditarGrupo" value="Sim">
+    <input type='button' class="botaoVoltarEditarGrupo" value='Voltar' onclick='history.go(-1)' />
+
+{% endblock content %}
