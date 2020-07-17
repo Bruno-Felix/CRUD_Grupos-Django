@@ -6,16 +6,16 @@
 
 {% block content %}
 
-<div class="divEditarArtista">
-    <h1 class="tituloDivEditarArtista"><strong> Editar Artista - {{ artista.nome }} </strong></h1>
+<div class="divEditar">
+    <h1 class="tituloDivEditar"><strong> Editar Artista - {{ artista.nome }} </strong></h1>
     <form action="" method="post"> 
         
         {% csrf_token %}
 
         {{ form|crispy }}
       
-        <input type="submit" class="botaoAtualizarEditarArtista" value="Atualizar">
-        <input type='button' class="botaoVoltarEditarArtista" value='Voltar' onclick='history.go(-1)' />
+        <input type="submit" class="botaoAtualizarEditar" value="Atualizar">
+        <input type='button' class="botaoVoltarEditar" value='Voltar' onclick='history.go(-1)' />
     </form>
 </div>
 

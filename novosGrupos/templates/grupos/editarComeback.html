@@ -6,16 +6,17 @@
 
 {% block content %}
 
-<div class="divEditarComeback">
-    <h1 class="tituloDivEditarComeback"><strong> Editar Comeback - {{ comeback.nome }} </strong></h1>
+<div class="divEditar">
+    <h1 class="tituloDivEditar"><strong> Editar Comeback - {{ comeback.nome }} </strong></h1>
     <form action="" method="post"> 
         
         {% csrf_token %}
 
         {{ form|crispy }}
       
-        <input type="submit" class="botaoAtualizarEditarComeback" value="Atualizar">
-        <input type='button' class="botaoVoltarEditarComeback" value='Voltar' onclick='history.go(-1)' />
+        <input type="submit" class="botaoAtualizarEditar" value="Atualizar">
+        <input type='button' class="botaoVoltarEditar" value='Voltar' onclick='history.go(-1)' />
     </form>
 </div>
+
 {% endblock content %}
