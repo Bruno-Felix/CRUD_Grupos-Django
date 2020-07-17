@@ -1,15 +1,15 @@
-.divEditarGrupo{
+.divEditar{
     max-width: 1250px; 
     margin: auto; 
     padding: 20px; 
 }
 
-.tituloDivEditarGrupo{
+.tituloDivEditar{
     margin-top: 20px; 
     font-size: 45px;
 }
 
-.divEditarGrupo > form{
+.divEditar > form{
     border-radius: 7px; 
     padding: 20px 15px 0px 15px;
     font-weight: bold;
@@ -17,7 +17,7 @@
     margin-top: 50px;
 }
 
-.botaoAtualizarEditarGrupo{
+.botaoAtualizarEditar{
     text-decoration: none;
     box-shadow: 0 0 0 0;
     border: 0 none;
@@ -33,14 +33,14 @@
     background-color: #51b234;
 }
 
-.botaoAtualizarEditarGrupo:hover{
+.botaoAtualizarEditar:hover{
     text-decoration: none;
 
     color: #ffffff;
     background-color: #489e2e;
 }
 
-.botaoVoltarEditarGrupo{
+.botaoVoltarEditar{
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
@@ -56,7 +56,7 @@
     background-color: #c5cdd3;
 }
 
-.botaoVoltarEditarGrupo:hover{
+.botaoVoltarEditar:hover{
     text-decoration: none;
 
     color: #000000;
