@@ -143,8 +143,25 @@ def excluirGrupo(request, id=None):
         return redirect('Grupos')
 
     return render(request, "grupos/excluirGrupo.html", {'grupo':grupo})
-""" def excluirArtista(request, id=None):
 
+def excluirArtista(request, id=None):
+
+    artista = get_object_or_404(Artista, id=id)
+    grupos = Grupo.objects.all().order_by('-id')
+
+    if request.method == "POST":
+        artista.delete()
+        return render(request, "grupos/grupos.html", {'grupos':grupos})
+
+    return render(request, "grupos/excluirArtista.html", {'artista':artista})
 
 def excluirComeback(request, id=None):
- """
+
+    comeback = get_object_or_404(Comeback, id=id)
+    grupos = Grupo.objects.all().order_by('-id')
+
+    if request.method == "POST":
+        comeback.delete()
+        return render(request, "grupos/grupos.html", {'grupos':grupos})
+
+    return render(request, "grupos/excluirComeback.html", {'comeback':comeback})
