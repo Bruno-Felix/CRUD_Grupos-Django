@@ -1,28 +1,60 @@
+.divVBotoesGrupo{
+    max-width: 1250px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: 22px;
+}
+
+.botoesGrupo{
+    margin: auto;
+    width: 60%;
+    display: flex;
+}
+
+.opcoesVEditarGrupo{
+    flex: 1;
+    padding-top: 4px;
+    height: 45px;
+    margin-right: 22px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 7px;
+    background-color: #c4cdd4;
+    color: #000000;
+}
+.opcoesVEditarGrupo:hover{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #6b8394;
+}
+
+.opcoesVExcluirGrupo{
+    flex: 1;
+    border-radius: 7px;
+    padding-top: 4px;
+    height: 45px;
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #ff1a1a;
+}
+.opcoesVExcluirGrupo:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e60000;
+}
+
+
+/* -------------------- */
 .sectionVGrupo{
     max-width: 1250px;
     width: 100%;
     margin: auto;
     height: auto;
-    padding: 50px 22px;
+    padding: 10px 22px;
     display: flex;
     flex-wrap: wrap;
-}
-
-.botaoEditarVGrupo{
-    text-align: center;
-    width: 100%;
-    padding-top: 3px;
-    height: 45px;
-    font-size: 25px;
-    border-radius: 7px;
-    color: #ffffff;
-    background-color: #ff2200;
-}
-
-.botaoEditarVGrupo:hover{
-    color: #ffffff;
-    background-color: #cc1b00;
-    text-decoration: none;
 }
 
 .divVGrupo{
