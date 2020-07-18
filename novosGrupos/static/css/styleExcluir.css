@@ -1,0 +1,56 @@
+.divExcluir{
+    max-width: 1250px;
+    width: 100%;
+    margin: auto;
+    padding: 22px;
+}
+
+.divExcluir > h1{
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 50px;
+}
+
+.divBotoesExcluir{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+.botaoEExcluir{
+    border: 0 none;
+    font-size: 20px;
+
+    flex: 1;
+    height: 40px;
+    margin-right: 50px;
+
+    border-radius: 7px;
+    color: #ffffff;
+    background-color: #ff1a1a;
+}
+
+.botaoEExcluir:hover{    
+    color: #ffffff;
+    background-color: #e60000;
+    text-decoration: none;
+}
+
+.botaoECancelar{
+    border: 0 none;
+    font-size: 20px;
+
+    flex: 1;
+    height: 40px;
+
+    border-radius: 7px;
+    color: #000000;
+    border: 1px solid #c5cdd3;
+}
+
+.botaoECancelar:hover{    
+    color: #000000;
+    background-color: #c5cdd3;
+    text-decoration: none;
+}
