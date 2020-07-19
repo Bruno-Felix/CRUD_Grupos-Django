@@ -72,8 +72,9 @@ a:active....define o estilo do link ativo (o que foi "clicado") */
 .divVoltar{
     max-width: 1250px;
     width: 100%;
-    margin: 10px auto;
+    margin: 10px auto 0px;
     padding: 0px 22px;
+    height: 30px;
 }
 
 .divVoltar > span{
