@@ -9,7 +9,7 @@
     padding: 20px;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:500px){
     .divCabecalhoGrupos{
         flex-direction: column;
     }
@@ -19,35 +19,33 @@
     color: #090431;
     align-self: center;
     text-align: center;
-    font-size: 45px;
 }
 
 .botaoCriarGrupo {
     align-self: center;
     text-align: center;
     height: 45px;
-    width: 50%;   
-    padding-top: 3px;
-    font-size: 25px;
+    width: 230px;   
+    padding-top: 7px;
+    font-size: 20px;
     color: #ffffff;
-    background-color: #ff2200;
+    background-color: #090431;
     border-radius: 7px;
 }
 
-@media only screen and (max-width:600px){
+.botaoCriarGrupo:hover{
+    background-color: #12085e;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:500px){
     .tituloListaDeGrupos{
         margin: auto;
     }
     .botaoCriarGrupo{
-        margin: 30px auto;
-        width: 100%;
+        margin-top: 20px;
     }
-}
-
-.botaoCriarGrupo:hover{
-    background-color: #cc1b00;
-    color: #ffffff;
-    text-decoration: none;
 }
 
 
@@ -58,14 +56,13 @@
     display:flex;
     flex-wrap: wrap;
     max-width: 1250px;
-    padding: 12px;
+    padding: 12px;    
 }
 
-.Grupo{
-    height: 200px;
+.divGrupo{
+    height: 180px;
     border: 1px solid #c4cdd4;
-    font-size: medium;
-    flex:1 1 250px;
+    flex:1 1 200px;
     border-radius: 7px;
     margin: 10px 10px 10px 10px;
 }
@@ -75,11 +72,11 @@
     top: 0;
     padding-top: 30px;
     text-align: center;
-    height: 155px;
+    height: 80%;
 }
 
-.divBotoesGrupo{
-    height: 45px;
+.botaoGrupo{
+    height: 20%;
     top: 0px;
     justify-content: center;
     width: 100%;
@@ -89,8 +86,8 @@
 .botaoVisualizarGrupo{
     text-align: center;
     width: 100%;
-    padding-top: 10px;
-    height: 45px;
+    padding-top: 6px;
+    height: auto;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     color: #090431;
@@ -99,6 +96,6 @@
 
 .botaoVisualizarGrupo:hover{
     color: #ffffff;
-    background-color: #ff2200;
+    background-color: #090431;
     text-decoration: none;
 }
