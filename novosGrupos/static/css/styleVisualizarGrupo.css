@@ -1,19 +1,16 @@
 .divVBotoesGrupo{
+    justify-content: center;
     max-width: 1250px;
     width: 100%;
     margin: auto;
     display: flex;
-    margin-top: 22px;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-.botoesGrupo{
-    margin: auto;
-    width: 60%;
-    display: flex;
-}
 
 .opcoesVEditarGrupo{
-    flex: 1;
+    width: 230px;
     padding-top: 4px;
     height: 45px;
     margin-right: 22px;
@@ -24,13 +21,13 @@
     color: #000000;
 }
 .opcoesVEditarGrupo:hover{
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
-    background-color: #6b8394;
+    background-color: #a6b4bf;
 }
 
 .opcoesVExcluirGrupo{
-    flex: 1;
+    width: 230px;
     border-radius: 7px;
     padding-top: 4px;
     height: 45px;
@@ -61,7 +58,7 @@
     width: 100%;
     background-color: #c4cdd4;
     border-radius: 7px;
-    padding: 5px;
+    padding: 1px;
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -70,6 +67,11 @@
 @media only screen and (max-width:900px){
     .divVGrupo{
         flex-direction: column;
+    }
+
+    .opcoesVEditarGrupo{
+        margin-right: 0px;
+        margin-bottom: 20px;
     }
 }
 
@@ -80,7 +82,7 @@
     border-radius: 7px;
     flex: 1 1 200px;
     background-color: #ffffff;
-    margin-right: 5px;
+    margin-right: 1px;
     padding: 20px;
 }
 
@@ -100,7 +102,7 @@
 @media only screen and (max-width:900px){
     .grupoVInformacoes{
         margin-right: 0px;
-        margin-bottom: 5px; 
+        margin-bottom: 1px; 
     }
 }
 
@@ -115,7 +117,7 @@
 
 .grupoVObjetoArtistas{
     flex: 1;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 7px;
