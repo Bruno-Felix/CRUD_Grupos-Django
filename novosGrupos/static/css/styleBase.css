@@ -11,11 +11,17 @@ body, ul, li, p{
     min-height: 100%;
     margin: 0px;
     padding: 0px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 body{
+    color: #090431;
     background-color: #ffffff;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 35px;
 }
 
 .divNavBar{
@@ -71,12 +77,12 @@ a:active....define o estilo do link ativo (o que foi "clicado") */
 }
 
 .divVoltar > span{
-    color: #5c5c5c;
+    color: #566876;
     font-size: 15px;
 }
 
 .botaoVoltar{
-    color: #5c5c5c;
+    color: #566876;
     font-size: 15px;
     text-decoration: none;
     text-decoration: underline;
@@ -85,3 +91,10 @@ a:active....define o estilo do link ativo (o que foi "clicado") */
 .botaoVoltar:hover{
     color: #090431;
 }
+
+
+/* 160a76
+12085e
+c4cdd4
+566876
+090431 */
