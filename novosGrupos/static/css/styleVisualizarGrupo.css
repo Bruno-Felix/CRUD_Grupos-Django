@@ -1,40 +1,46 @@
 .divVBotoesGrupo{
-    justify-content: center;
     max-width: 1250px;
     width: 100%;
     margin: auto;
+    padding: 0px 20px;
+    
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
+    justify-content: right;
 }
 
+.botoesGrupo{
+    width: auto;
+    height: auto;
+    display: flex;
+}
 
 .opcoesVEditarGrupo{
-    width: 230px;
-    padding-top: 4px;
+    width: 226px; 
     height: 45px;
-    margin-right: 22px;
+    padding-top: 7px;
+    margin-right: 20px;
+
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 7px;
-    background-color: #c4cdd4;
-    color: #000000;
+    color: #090431;
+    border: 1px solid #090431;
 }
 .opcoesVEditarGrupo:hover{
-    color: #000000;
     text-decoration: none;
-    background-color: #a6b4bf;
+    color: #ffffff;
+    background-color: #090431;
 }
 
 .opcoesVExcluirGrupo{
-    width: 230px;
+    width: 226px;
     border-radius: 7px;
-    padding-top: 4px;
+    padding-top: 7px;
     height: 45px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     color: #ffffff;
-    background-color: #ff1a1a;
+    background-color: #ff0000;
 }
 .opcoesVExcluirGrupo:hover{
     text-decoration: none;
@@ -42,14 +48,30 @@
     background-color: #e60000;
 }
 
+@media only screen and (max-width:650px){
 
+    .divVBotoesGrupo{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botoesGrupo{
+        margin-top: 20px;
+        flex-direction: column;
+
+    }
+    .opcoesVEditarGrupo{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}
 /* -------------------- */
 .sectionVGrupo{
     max-width: 1250px;
     width: 100%;
     margin: auto;
     height: auto;
-    padding: 10px 22px;
+    padding: 10px 20px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -64,14 +86,9 @@
     flex-wrap: wrap;
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:700px){
     .divVGrupo{
         flex-direction: column;
-    }
-
-    .opcoesVEditarGrupo{
-        margin-right: 0px;
-        margin-bottom: 20px;
     }
 }
 
@@ -99,7 +116,7 @@
     color: #2c2c2c;
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:700px){
     .grupoVInformacoes{
         margin-right: 0px;
         margin-bottom: 1px; 
@@ -119,15 +136,17 @@
     flex: 1;
     margin-bottom: 1px;
     padding: 20px;
-    background-color: #ffffff;
     border-radius: 7px;
+
+    background-color: #ffffff;
 }
         
 .grupoVObjetoComebacks{
-    background-color: #ffffff;
+    width: 100%;
     border-radius: 7px;
     padding: 20px;
-    width: 100%;
+
+    background-color: #ffffff;
 }
 
 .gridObjetos{
@@ -141,36 +160,38 @@
 .gridObjetos > a{
     border-radius: 7px;
     padding-top: 8px;
-    height: 40px;
-    font-weight: bold;
+    height: 45px;
+    
+    text-align: center;
     font-family: 'Lora', serif;
     color: #090431;
     background-color: #c4cdd4;
-    text-align: center;
 }
 
 .gridObjetos > a:hover{
     color: #ffffff;
-    background-color: #6b8394;
+    background-color: #090431;
     text-decoration: none;
 }
 
 .botaoAdicionar{
     display: block;
+    width: 226px;
+    margin: auto;
+    padding-top: 7px;
+    margin-top: 30px;
+    height: 45px;
+
+    font-size: 20px;
     border-radius: 7px;
     text-align: center;
-    height: 45px;
-    color: #000000;
-    border: 1px solid #ff2200;
     text-decoration: none;
-    width: 1fr;
-    padding-top: 3px;
-    margin-top: 30px;
-    font-size: 25px;
+    color: #090431;
+    border: 1px solid #090431;
 }
 
 .botaoAdicionar:hover{
     color: #ffffff;
-    background-color: #ff2200;
+    background-color: #090431;
     text-decoration: none;
 }
