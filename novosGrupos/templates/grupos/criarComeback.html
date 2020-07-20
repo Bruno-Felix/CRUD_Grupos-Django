@@ -6,8 +6,16 @@
 
 {% block content %}
 
-<div class="divCriar">
+<li class="divVoltar"><a class="botaoVoltar" href="/grupos">Lista de Grupos</a>
+                      <span> > </span>
+                      <a class="botaoVoltar" href="/visualizarGrupo/{{ comeback.grupo.id }}"> {{ comeback.grupo.nome }} </a>
+</li>
+
+<div class="divCabecalhoCriar">
     <h1 class="tituloDivCriar"><strong>Criar Comeback</strong></h1>
+</div>
+
+<div class="divCriar">
     <form action="" method="post"> 
         
         {% csrf_token %}
