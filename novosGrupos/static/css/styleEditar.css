@@ -62,15 +62,14 @@
     font-size: 20px;
     border-radius: 7px;
 
-    color: #000000;
+    color: #090431;
     background-color: #ffffff;
-    border: 1px solid #12085e;
+    border: 1px solid #c5cdd3;
 }
 
 .botaoVoltarEditar:hover{
     text-decoration: none;
 
-    color: #000000;
-    border: 1px solid #c5cdd3;
+    color: #090431;
     background-color: #c5cdd3;
 }
