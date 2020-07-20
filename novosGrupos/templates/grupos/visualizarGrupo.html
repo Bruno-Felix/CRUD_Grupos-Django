@@ -7,8 +7,10 @@
 <li class="divVoltar"><a class="botaoVoltar" href="/grupos">Lista de Grupos</a></li>
 
 <div class="divVBotoesGrupo">
+    <div class="botoesGrupo">
         <a class="opcoesVEditarGrupo" href="/editarGrupo/{{ grupo.id }}">Editar</a>
         <a class="opcoesVExcluirGrupo" href="/excluirGrupo/{{ grupo.id }}">Excluir</a>
+    </div>
 </div>
 
 <section class="sectionVGrupo">   
@@ -21,7 +23,7 @@
 
         <div class="grupoVObjetos">
             <div class="grupoVObjetoArtistas">
-                <h1><strong>Artistas</strong></h1><br>
+                <h2><strong>Artistas</strong></h2><br>
                 <div class="gridObjetos">
 
                     {% for artista in grupo.artista_set.all %}
@@ -36,7 +38,7 @@
             </div>
             
             <div class="grupoVObjetoComebacks">
-                <h1><strong>Músicas</strong></h1><br>
+                <h2><strong>Músicas</strong></h2><br>
                 <div class="gridObjetos">   
 
                     {% for comeback in grupo.comeback_set.all %}
