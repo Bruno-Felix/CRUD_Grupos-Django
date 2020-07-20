@@ -8,26 +8,26 @@
                       <span> > </span>
                       <a class="botaoVoltar" href="/visualizarGrupo/{{ artista.grupo.id }}"> {{ artista.grupo.nome }} </a></li>
 
+<div class="divVBotoesArtista">
+    <div class="botoesArtista">
+        <a class="opcoesVEditarArtista" href="/editarArtista/{{ artista.id }}">Editar</a>
+        <a class="opcoesVExcluirArtista" href="/excluirArtista/{{ artista.id }}">Excluir</a>
+    </div>
+</div>
+
 <section class="sectionVArtista">   
     <div class="divVArtista">
         <div class="artistaVInformacoes">
             <h1><strong> {{ artista.nome}} </strong></h1><br>
             <div>
                 <strong>Grupo:</strong><a href="/visualizarGrupo/{{ artista.grupo.id }}"> {{ artista.grupo.nome }} </a>
-                <strong>Idade:</strong> <span>{{ artista.idade}}</span>
             </div>
-            <br>
             <div>
+                <strong>Idade:</strong> <span>{{ artista.idade}}</span>
                 <strong>Gênero:</strong> <span>{{ artista.genero}}</span>
                 <strong>País:</strong> <span>{{ artista.pais}} </span>
             </div>
         </div>  
-        <div class="comebackVOpcoes">
-            <div class="divVBotoesArtista">
-                <a class="opcoesVEditarArtista" href="/editarArtista/{{ artista.id }}">Editar</a>
-                <a class="opcoesVExcluirArtista" href="/excluirArtista/{{ artista.id }}">Excluir</a>
-            </div>
-        </div>
     </div>
 </section>
 
