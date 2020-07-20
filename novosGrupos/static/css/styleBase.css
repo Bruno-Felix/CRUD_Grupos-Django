@@ -24,37 +24,37 @@ h1{
     font-size: 35px;
 }
 
+
+/* ---------------------------- */
 .divNavBar{
     top: 0;
     max-width: 1250px;
-    width: 89%;
+    width: 100%;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    border-bottom: 1px solid #c4cdd4;
 }
 
 .menu{
-    list-style: none;
-    justify-content: center;
-    align-items: center;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin: 10px 20px 0px;
+
+    justify-content: center;
+    border-bottom: 1px solid #c4cdd4;
 }
 
 .menu a{
     align-items: center;
     text-align: center;
     display: flex;
-    cursor: pointer;
     height: 45px;
     padding: 0px 10px 0 10px;
-    font-size: 25px;
-    color: #090431;
     border-radius: 7px;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #090431;
 }
 
 .menu a:hover{
@@ -64,27 +64,23 @@ h1{
     background-color: #090431;
     transition: 0.2s;
 }
-/* a:link........define o estilo do link no estado inicial;
-a:visited...define o estilo do link visitado;
-a:hover.....define o estilo do link quando passa-se o mouse sobre ele;
-a:active....define o estilo do link ativo (o que foi "clicado") */
 
+
+/* ---------------------------- */
 .divVoltar{
     max-width: 1250px;
     width: 100%;
     margin: 10px auto 0px;
-    padding: 0px 22px;
+    padding: 0px 20px;
     height: 30px;
 }
 
 .divVoltar > span{
     color: #566876;
-    font-size: 15px;
 }
 
 .botaoVoltar{
     color: #566876;
-    font-size: 15px;
     text-decoration: none;
     text-decoration: underline;
 }
