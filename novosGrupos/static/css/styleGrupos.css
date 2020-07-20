@@ -1,35 +1,35 @@
 .divCabecalhoGrupos{
-    justify-content: space-between;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
     max-width: 1250px;
     width: 100%;
-    padding: 20px;
+    margin: auto;
+    padding: 0px 20px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:650px){
     .divCabecalhoGrupos{
+        margin-top: 20px;
         flex-direction: column;
     }
 }
 
 .tituloListaDeGrupos{
     color: #090431;
-    align-self: center;
-    text-align: center;
+    margin-bottom: 0px;
 }
 
 .botaoCriarGrupo {
-    align-self: center;
-    text-align: center;
     height: 45px;
-    width: 230px;   
+    width: 226px;   
     padding-top: 7px;
+
+    text-align: center;
     font-size: 20px;
+    border-radius: 7px;
     color: #ffffff;
     background-color: #090431;
-    border-radius: 7px;
 }
 
 .botaoCriarGrupo:hover{
@@ -38,12 +38,12 @@
     text-decoration: none;
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:650px){
     .tituloListaDeGrupos{
         margin: auto;
     }
     .botaoCriarGrupo{
-        margin-top: 20px;
+        margin: 23px auto 0px;
     }
 }
 
@@ -55,11 +55,11 @@
     display:flex;
     flex-wrap: wrap;
     max-width: 1250px;
-    padding: 12px;    
+    padding: 10px;    
 }
 
 .divGrupo{
-    height: 180px;
+    height: 140px;
     border: 1px solid #c4cdd4;
     flex:1 1 200px;
     border-radius: 7px;
@@ -67,28 +67,31 @@
 }
 
 .infosGrupo{
-    color: #090431;
     top: 0;
+    height: 75%;
     padding-top: 30px;
+
+    font-size: 20px;
     text-align: center;
-    height: 80%;
+    color: #090431;
 }
 
 .botaoGrupo{
-    height: 20%;
-    top: 0px;
-    justify-content: center;
+    height: 25%;
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .botaoVisualizarGrupo{
-    text-align: center;
     width: 100%;
-    padding-top: 6px;
     height: auto;
+    padding-top: 3px;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
+
+    text-align: center;
+    font-size: 20px;
     color: #090431;
     background-color: #c4cdd4;
 }
