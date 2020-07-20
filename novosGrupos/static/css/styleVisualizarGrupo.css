@@ -158,12 +158,12 @@
 }
 
 .gridObjetos > a{
-    border-radius: 7px;
-    padding-top: 8px;
     height: 45px;
+    padding-top: 9px;
     
     text-align: center;
     font-family: 'Lora', serif;
+    border-radius: 7px;
     color: #090431;
     background-color: #c4cdd4;
 }
