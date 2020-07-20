@@ -6,6 +6,12 @@
 
 {% block content %}
 
+<li class="divVoltar"><a class="botaoVoltar" href="/grupos">Lista de Grupos</a>
+                     <span> > </span>
+                     <a class="botaoVoltar" href="/visualizarGrupo/{{ artista.grupo.id }}"> {{ artista.grupo.nome }} </a>
+                     <span> > </span>
+                     <a class="botaoVoltar" href="/visualizarArtista/{{ artista.id }}"> {{ artista.nome }} </a></li>
+
 <div class="divEditar">
     <h1 class="tituloDivEditar"><strong> Editar Artista - {{ artista.nome }} </strong></h1>
     <form action="" method="post"> 
