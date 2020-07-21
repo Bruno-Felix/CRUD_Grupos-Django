@@ -8,7 +8,7 @@ class GrupoForm(forms.ModelForm):
         widgets = {
 
             'nome':forms.TextInput(attrs={'placeholder':'Nome do grupo'}),
-            'debut':forms.TextInput(attrs={'placeholder':'Ano de debut do grupo'}),
+            'debut':forms.TextInput(attrs={'placeholder':'Debut do grupo'}),
             'resumo':forms.Textarea(attrs={'placeholder':'Resumo do grupo'}),
         }
 
