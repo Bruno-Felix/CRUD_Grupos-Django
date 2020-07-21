@@ -12,23 +12,32 @@
 }
 
 .divBotoesExcluir{
-    width: 50%;
+    max-width: 1250px;
+    width: 100%;
     margin: auto;
-    text-align: center;
+    padding: 0px 20px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.botoesExcluir{
+    width: auto;
+    height: auto;
     display: flex;
 }
 
 .botaoEExcluir{
     border: 0 none;
+    
+    width: 226px; 
+    height: 45px;
+    margin-right: 20px;
+
     font-size: 20px;
-
-    flex: 1;
-    height: 40px;
-    margin-right: 50px;
-
     border-radius: 7px;
     color: #ffffff;
-    background-color: #ff1a1a;
+    background-color: #ff0000;
 }
 
 .botaoEExcluir:hover{    
@@ -38,19 +47,41 @@
 }
 
 .botaoECancelar{
+    border: 1px solid black;
     border: 0 none;
+
+    width: 226px;
+    height: 45px;
+
     font-size: 20px;
-
-    flex: 1;
-    height: 40px;
-
     border-radius: 7px;
-    color: #000000;
+
+    color: #090431;
+    background-color: #ffffff;
     border: 1px solid #c5cdd3;
 }
 
 .botaoECancelar:hover{    
-    color: #000000;
-    background-color: #c5cdd3;
     text-decoration: none;
+
+    color: #090431;
+    background-color: #c5cdd3;
+}
+
+@media only screen and (max-width:650px){
+
+    .divBotoesExcluir{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botoesExcluir{
+        flex-direction: column;
+
+    }
+    .botaoEExcluir{
+        display: inline-block;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
 }
