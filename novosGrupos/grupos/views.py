@@ -43,31 +43,33 @@ def criarGrupo(request):
 
     return render(request, "grupos/criarGrupo.html", {'form':form})
 
-def criarArtista(request):
+def criarArtista(request, id=None):
 
+    grupo = get_object_or_404(Grupo, id=id)
     form = ArtistaForm(request.POST)
     if form.is_valid():
         obj = form.save()
         obj.save()
         form = ArtistaForm()
-        return redirect('listaDeArtistas')
+        return render(request, "grupos/visualizarGrupo.html", {'form':form, 'grupo':grupo})
     else:
         form = ArtistaForm()
 
-    return render(request, "grupos/criarArtista.html", {'form':form})
+    return render(request, "grupos/criarArtista.html", {'form':form, 'grupo':grupo})
 
-def criarComeback(request):
+def criarComeback(request, id=None):
 
+    grupo = get_object_or_404(Grupo, id=id)
     form = ComebackForm(request.POST)
     if form.is_valid():
         obj = form.save()
         obj.save()
         form = ComebackForm()
-        return redirect('listaDeComebacks')
+        return render(request, "grupos/visualizarGrupo.html", {'form':form, 'grupo':grupo})
     else:
         form = ComebackForm()
 
-    return render(request, "grupos/criarComeback.html", {'form':form})
+    return render(request, "grupos/criarComeback.html", {'form':form, 'grupo':grupo})
 
 
 def editarGrupo(request, id=None):
