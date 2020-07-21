@@ -13,8 +13,10 @@
         {% csrf_token %}
 
         <div class="divBotoesExcluir">
-            <input type="submit" class="botaoEExcluir" value="Sim">
-            <input type='button' class="botaoECancelar" value='Cancelar' onclick='history.go(-1)' />
+            <div class="botoesExcluir">
+                <input type="submit" class="botaoEExcluir" value="Sim">
+                <input type='button' class="botaoECancelar" value='Cancelar' onclick='history.go(-1)' />
+            </div>
         </div>
     </form>
 </section>
