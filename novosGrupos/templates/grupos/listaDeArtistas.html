@@ -2,25 +2,26 @@
 
 {% block content %}
 
-<div class="divCabecalhoArtista">
-    <h1 class="tituloListaDeArtistas"><strong>Lista de Artistas</strong></h1>
-    <a class="botaoCriarArtista" href="/criarArtista">Criar Artista</a>
+<div class="divVoltar"></div>
+
+<div class="divCabecalhoListar">
+    <h1 class="tituloListaDeListar"><strong>Artistas</strong></h1>
+    <a class="botaoCriarListar" href="/criarArtista">Criar Artista</a>
 </div>
 
-<section class="flexArtistas">
+<section class="flexListar">
 
     {% for artista in artistas %}
 
-        <div class ="Artista">
-            <div class="infosArtista">
-                <h1><strong> {{ artista.nome }} </strong></h1>
-
+        <div class ="divListar">
+            <div class="infosListar">
+                <strong> {{ artista.nome }} </strong>
+                <br>
                 {{ artista.grupo }}
             </div>
             
-            <div class="divBotoesArtista">
-                <a class="botaoEditarArtista" href="/editarArtista/{{ artista.id }}">Editar</a>
-                <a class="botaoExcluirArtista" href="#">Excluir</a>
+            <div class="botaoListar">
+                <a class="botaoVisualizarListar" href="/visualizarArtista/{{ artista.id }}">Visualizar</a>
             </div>
         </div>
         

@@ -11,22 +11,22 @@
 
 <div class="divVoltar"></div>
 
-<div class="divCabecalhoGrupos">
-    <h1 class="tituloListaDeGrupos"><strong>Grupos</strong></h1>
-    <a class="botaoCriarGrupo" href="/criarGrupo">Criar Grupo</a>
+<div class="divCabecalhoListar">
+    <h1 class="tituloListaDeListar"><strong>Grupos</strong></h1>
+    <a class="botaoCriarListar" href="/criarGrupo">Criar Grupo</a>
 </div>
 
-<section class="flexGrupos">
+<section class="flexListar">
 
     {% for grupo in grupos %}
 
-    <div class ="divGrupo">
-        <div class="infosGrupo">
+    <div class ="divListar">
+        <div class="infosListar">
                 <strong> {{ grupo.nome}} </strong>
             </div>
 
-            <div class="botaoGrupo">
-                <a class="botaoVisualizarGrupo" href="/visualizarGrupo/{{ grupo.id }}">Visualizar</a>
+            <div class="botaoListar">
+                <a class="botaoVisualizarListar" href="/visualizarGrupo/{{ grupo.id }}">Visualizar</a>
             </div>
         </div>
         

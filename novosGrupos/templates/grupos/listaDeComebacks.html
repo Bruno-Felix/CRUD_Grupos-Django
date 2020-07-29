@@ -2,25 +2,26 @@
 
 {% block content %}
 
-<div class="divBotaoCriarComeback">
-    <h1 class="tituloListaDeComebacks"><strong>Lista de Comebacks</strong></h1>
-    <a class="botaoCriarComeback" href="/criarComeback">Criar Comeback</a>
+<div class="divVoltar"></div>
+
+<div class="divCabecalhoListar">
+    <h1 class="tituloListaDeListar"><strong>Comebacks</strong></h1>
+    <a class="botaoCriarListar" href="/criarComeback">Criar Comeback</a>
 </div>
 
-<section class="flexComebacks">
+<section class="flexListar">
 
     {% for comeback in comebacks %}
     
-        <div class="Comeback">
-            <div class="infosComeback">
-                <h1><strong> {{ comeback.nome }} </strong></h1>
-
+        <div class="divListar">
+            <div class="infosListar">
+                <strong> {{ comeback.nome }} </strong>
+                <br>
                 {{ comeback.grupo }}
             </div>
                 
-            <div class="divBotoesComeback">
-                <a class="botaoEditarComeback" href="/editarComeback/{{ comeback.id }}">Editar</a>
-                <a class="botaoExcluirComeback"href="#">Excluir</a>
+            <div class="botaoListar">
+                <a class="botaoVisualizarListar" href="/visualizarComeback/{{ comeback.id }}">Visualizar</a>
             </div>
         </div>
 
