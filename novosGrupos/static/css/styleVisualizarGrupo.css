@@ -158,8 +158,8 @@
 }
 
 .gridObjetos > a{
-    height: 45px;
-    padding-top: 9px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     
     text-align: center;
     font-family: 'Lora', serif;
