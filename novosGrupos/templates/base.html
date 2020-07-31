@@ -26,7 +26,7 @@
 
 <body>
     <!--Navbar das páginas-->
-    <header>
+    <!-- <header>
         <nav class="divNavBar">
             <ul class="menu">
                 <li><a href="/artistas">Artistas</a></li>
@@ -34,7 +34,26 @@
                 <li><a href="/comebacks">Comebacks</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+    
+    <nav class="divNavBar">
+        <input id="menu-hamburger" type="checkbox">
+        
+        <label for="menu-hamburger"> 
+            <nav class="menu">
+                <span class="hamburger"></span>
+            </nav>
+
+            <div class="divMenuOpcoes">
+                <div class ="menuOpcoes">
+                    <a href="/">Grupos</a></li>
+                    <a href="/artistas">Artistas</a>
+                    <a href="/comebacks">Comebacks</a>
+                </div>
+            </div>
+        </label>
+    </nav>
+
     
     
     <!--Parte da página do base.html que mudará, dependendo de onde for chamado chamado-->
