@@ -26,63 +26,46 @@ h1{
     top: 0;
     max-width: 1250px;
     width: 100%;
-    margin: 20px auto;
+    /* margin: 20px auto; */
+    margin: auto;
     
     display: flex;
+    /* border: 1px solid black; */
 }
 
-.navMob{
-    margin: auto;
-}
-
-.navMob > input{
+.divNavBar > input{
     display: none;
 }
 
-.navMob > label{
+.divNavBar > label{
     margin: auto;
-}
-
-.menu{
-    width: 50px;
-    height: 50px;
-    margin: auto;
-    position: relative;
-
-    background-color: #090431;
-    border-radius: 50px;
-    box-shadow: 0 0 0 0, 0 0 0 0;
-    cursor: pointer;
-}
-
-.menu:hover{
-    transition: 0.7s;
-    background-color: #12085e;
+    width: 100%;
+    margin: 10px 20px 0;
+    border-bottom: 1px solid #c4cdd4;
 }
 
 .divMenuOpcoes{
-    width: 100vw;
-    height: 100vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-
-    opacity: 0;
-    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.menuOpcoes{
-    width: 226px; 
+.menuOpcoes{ 
     margin: auto;
-    padding-top:148px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .menuOpcoes > a{
     height: 45px;
-    margin-bottom: 50px;
-    padding-top: 7px;
-    display: block;
+    /* margin-bottom: 50px; */
+    /* padding-top: 7px; */
+    padding: 7px 20px 0 20px;
+    /* margin-right: 10px; */
+    /* display: block; */
 
     font-weight: bold;
     border-radius: 7px;
@@ -96,70 +79,133 @@ h1{
     text-decoration: none;
     align-items: center;
     transition: 0.2s;
-    color: #090431;
-    background-color: #c4cdd4;
+
+    color: #ffffff;
+    background-color: #090431;
 }
 
-.hamburger{
-    width: 23px;
-    height: 2px;
-    top: 24px;
-    left: 13.5px;
-    position: relative;
-    display: block;
+@media only screen and (max-width:650px){
+
+    .divNavBar > label{
+        padding-bottom: 15px;
+    }
+
+    .menu{
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+
+        background-color: #090431;
+        border-radius: 50px;
+        box-shadow: 0 0 0 0, 0 0 0 0;
+        cursor: pointer;
+    }
+
+    .menu:hover{
+        transition: 0.7s;
+        background-color: #12085e;
+    }
+
+    .hamburger{
+        width: 23px;
+        height: 2px;
+        top: 24px;
+        left: 13.5px;
+        position: relative;
+        display: block;
+        
+        transition: 0.5s ease-out;
+        background-color: #ffffff;
+    }
+
+    .hamburger::before,
+    .hamburger::after{
+        width: 100%;
+        height: 100%;
+        content: '';
+        display: block;
+        position: absolute;
+
+        transition: 0.5s;
+        background-color: #ffffff;
+    }
+
+    .hamburger::before{
+        top: -7px;
+    }
+
+    .hamburger::after{
+        bottom: -7px;
+    }
     
-    transition: 0.5s ease-out;
-    background-color: #ffffff;
+    .divMenuOpcoes{
+        border: 1px solid red;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menuOpcoes{
+        border: 1px solid yellow;
+        flex-direction: column;
+        padding-top:148px;
+        width: auto;
+        height: auto;
+    }
+
+    .menuOpcoes > a{
+        width: 226px;
+        margin-bottom: 50px;
+        padding-top: 7px;
+        display: block;
+        margin-right: 0px;
+
+        color: #090431;
+        background-color: #ffffff;
+    }
+
+    .menuOpcoes > a:hover{
+        color: #090431;
+        background-color: #c4cdd4;
+    }
+
+    input:checked ~ label .divMenuOpcoes{
+        opacity: 1;
+        visibility: visible;
+        transition: 0.5s;
+    }
+    
+    input:checked ~ label .menu{
+        box-shadow: 0 0 0 100vh #090431, 0 0 0 100vw #090431;
+        transition: 0.5s;
+        background-color: #ffffff;
+    }
+    
+    input:checked ~ label .hamburger{
+        transform: rotate(45deg);
+        background-color: #090431;
+    }
+    
+    input:checked ~ label .hamburger::before{
+        top: 0;
+        transform: rotate(90deg);
+        background-color: #090431;
+    }
+    
+    input:checked ~ label .hamburger::after{
+        bottom: 0;
+        transform: rotate(90deg);
+        background-color: #090431;
+    }
 }
 
-.hamburger::before,
-.hamburger::after{
-    width: 100%;
-    height: 100%;
-    content: '';
-    display: block;
-    position: absolute;
-
-    transition: 0.5s;
-    background-color: #ffffff;
-}
-
-.hamburger::before{
-    top: -7px;
-}
-
-.hamburger::after{
-    bottom: -7px;
-}
-
-input:checked ~ label .divMenuOpcoes{
-    opacity: 1;
-    visibility: visible;
-    transition: 0.5s;
-}
-
-input:checked ~ label .menu{
-    box-shadow: 0 0 0 100vh #090431, 0 0 0 100vw #090431;
-    transition: 0.5s;
-    background-color: #ffffff;
-}
-
-input:checked ~ label .hamburger{
-    transform: rotate(45deg);
-    background-color: #090431;
-}
-
-input:checked ~ label .hamburger::before{
-    top: 0;
-    transform: rotate(90deg);
-    background-color: #090431;
-}
-
-input:checked ~ label .hamburger::after{
-    bottom: 0;
-    transform: rotate(90deg);
-    background-color: #090431;
-}
 
 /* ---------------------------- */
 .divVoltar{

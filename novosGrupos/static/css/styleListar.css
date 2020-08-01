@@ -10,7 +10,6 @@
 
 @media only screen and (max-width:650px){
     .divCabecalhoListar{
-        margin-top: 20px;
         flex-direction: column;
     }
 }
