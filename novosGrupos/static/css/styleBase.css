@@ -31,11 +31,15 @@ h1{
     display: flex;
 }
 
-.divNavBar > input{
+.navMob{
+    margin: auto;
+}
+
+.navMob > input{
     display: none;
 }
 
-.divNavBar > label{
+.navMob > label{
     margin: auto;
 }
 
