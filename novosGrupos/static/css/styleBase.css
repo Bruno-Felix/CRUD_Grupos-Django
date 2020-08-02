@@ -26,11 +26,9 @@ h1{
     top: 0;
     max-width: 1250px;
     width: 100%;
-    /* margin: 20px auto; */
     margin: auto;
     
     display: flex;
-    /* border: 1px solid black; */
 }
 
 .divNavBar > input{
@@ -61,30 +59,43 @@ h1{
 
 .menuOpcoes > a{
     height: 45px;
-    /* margin-bottom: 50px; */
-    /* padding-top: 7px; */
     padding: 7px 20px 0 20px;
-    /* margin-right: 10px; */
-    /* display: block; */
+    margin-right: 10px;
 
     font-weight: bold;
     border-radius: 7px;
     font-size: 20px;
     text-align: center;
-    color: #090431;
-    background-color: #ffffff;
 }
 
-.menuOpcoes > a:hover{
+.menuOpcaoPrincipal{
+    color: #ffffff;
+    background-color: #090431;
+}
+
+.menuOpcaoPrincipal:hover{
     text-decoration: none;
     align-items: center;
     transition: 0.2s;
 
     color: #ffffff;
-    background-color: #090431;
+    background-color: #12085e;
+}
+.menuOpcaoSecundario{
+    color: #090431;
+    background-color: #ffffff;
 }
 
-@media only screen and (max-width:650px){
+.menuOpcaoSecundario:hover{
+    text-decoration: none;
+    align-items: center;
+    transition: 0.2s;
+
+    color: #090431;
+    background-color: #c4cdd4;
+}
+
+@media only screen and (max-width:490px){
 
     .divNavBar > label{
         padding-bottom: 15px;
@@ -140,7 +151,6 @@ h1{
     }
     
     .divMenuOpcoes{
-        border: 1px solid red;
         width: 100%;
         height: 100%;
         top: 50%;
@@ -153,24 +163,33 @@ h1{
     }
 
     .menuOpcoes{
-        border: 1px solid yellow;
         flex-direction: column;
-        padding-top:148px;
-        width: auto;
         height: auto;
+        align-items: center;
+        margin: auto;
     }
 
     .menuOpcoes > a{
         width: 226px;
-        margin-bottom: 50px;
-        padding-top: 7px;
+        margin: 0 0 50px 0;
         display: block;
-        margin-right: 0px;
 
+        text-decoration: none;
+        align-items: center;
+        transition: 0.2s;
+    }
+
+    .menuOpcaoPrincipal{
         color: #090431;
         background-color: #ffffff;
     }
 
+    .menuOpcaoSecundario{
+        color: #ffffff;
+        background-color: #090431;
+        border: 1px solid #ffffff;
+    }
+    
     .menuOpcoes > a:hover{
         color: #090431;
         background-color: #c4cdd4;
@@ -208,10 +227,10 @@ h1{
 
 
 /* ---------------------------- */
-.divVoltar{
+.divVoltar{ 
     max-width: 1250px;
     width: 100%;
-    margin: auto;
+    margin: 10px auto;
     padding: 0px 20px;
     height: 30px;
 }
