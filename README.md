@@ -25,9 +25,17 @@ O projeto foi feito no intuito se sevir como uma inicialização ao Django e ao 
 
 ![Preview-Screens](https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGrupos.png) 
 ![Preview-Screens](https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarGrupo.png)
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/menuMobile.png" width="230">
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGruposMobile.png" width="230">
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/criarGrupoMobile.png" width="230">
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarGrupoMobile.png" width="230">
+<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/menuMobile.png" width="250">
+<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGruposMobile.png" width="250">
+<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarGrupoMobile.png" width="250">
 
 Para mais imagens, [clique aqui](https://drive.google.com/drive/folders/13_F1q7Dy3HBfuFGxwfPXQfPnM9hpzg1u?usp=sharing)
+
+# Tecnologias
+
+* Django
+* Python
+* Crispy Forms
+* VirtualEnv
+* HTML
+* CSS
