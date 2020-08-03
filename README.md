@@ -104,4 +104,4 @@ $ python3 manage.py runserver
 
 Abra espaço para novas culturas e curta música boa, independente de onde ela venha:
 
-Minha Playlist Spotify: [Playlist - Kpop, Fighting!!](https://open.spotify.com/playlist/3S7MGGfPYJ0vRhII5Mj7t3?si=6b8F4Bf8SKmDbzrEY7jV9w) 
+Minha Playlist Spotify: [Kpop, Fighting!!](https://open.spotify.com/playlist/3S7MGGfPYJ0vRhII5Mj7t3?si=6b8F4Bf8SKmDbzrEY7jV9w) 
