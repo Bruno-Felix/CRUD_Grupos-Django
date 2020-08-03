@@ -11,6 +11,18 @@ O projeto é um CRUD (Create, Read, Update e Delete) de Grupos Musicais onde se 
 O projeto foi feito no intuito de servir como uma inicialização ao Django e ao Desenvolvimento Web.
 
 
+## Imagens
+
+![Preview-Screens](https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGrupos.png) 
+![Preview-Screens](https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarGrupo.png)
+<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/menuMobile.png" width="230">
+<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGruposMobile.png" width="230">
+<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarGrupoMobile.png" width="230">
+<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/excluirGrupoMobile.png" width="230">
+
+Para mais imagens do projeto, [clique aqui](https://drive.google.com/drive/folders/13_F1q7Dy3HBfuFGxwfPXQfPnM9hpzg1u?usp=sharing)
+
+
 ## Funcionalidades
 
 * Lista de Grupos:
@@ -33,17 +45,6 @@ O projeto foi feito no intuito de servir como uma inicialização ao Django e ao
 * Lista de todas Músicas;
       
 
-## Imagens
-
-![Preview-Screens](https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGrupos.png) 
-![Preview-Screens](https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarGrupo.png)
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/menuMobile.png" width="250">
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGruposMobile.png" width="250">
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarGrupoMobile.png" width="250">
-
-Para mais imagens, [clique aqui](https://drive.google.com/drive/folders/13_F1q7Dy3HBfuFGxwfPXQfPnM9hpzg1u?usp=sharing)
-
-
 ## Tecnologias
 
 * Python
@@ -56,7 +57,7 @@ Para mais imagens, [clique aqui](https://drive.google.com/drive/folders/13_F1q7D
 
 ## Rodar Localmente
 
-### Pré requisitos:
+### Pré requisitos
 
 - Python
 - Pip
@@ -65,7 +66,7 @@ Para mais imagens, [clique aqui](https://drive.google.com/drive/folders/13_F1q7D
 
 Instruções de instalação [aqui](https://github.com/Bruno-Felix/CRUD_Grupos/wiki/Pre-Requisitos)
 
-### Instalando:
+### Instalando
 
 **Clonando Repositório**
 
@@ -93,3 +94,7 @@ $ cd novosGrupos
 $ python3 manage.py runserver
 ```
 **Entrar no servidor de desenvolvimento**: http://127.0.0.1:8000/
+
+### Uso do CRUD
+
+**Para auxiliar um melhor teste do CRUD, alguns casos teste para serem usados**: [Casos Teste](https://github.com/Bruno-Felix/CRUD_Grupos/wiki/Grupos) 
