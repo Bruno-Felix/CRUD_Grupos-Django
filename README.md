@@ -98,3 +98,10 @@ $ python3 manage.py runserver
 ### Uso do CRUD
 
 **Para auxiliar um melhor teste do CRUD, alguns casos teste para serem usados**: [Casos Teste](https://github.com/Bruno-Felix/CRUD_Grupos/wiki/Grupos) 
+
+
+## Música:
+
+Abra espaço para novas culturas e curta música boa, independente de onde ela venha:
+
+Minha Playlist Spotify: [Playlist - Kpop, Fighting!!](https://open.spotify.com/playlist/3S7MGGfPYJ0vRhII5Mj7t3?si=6b8F4Bf8SKmDbzrEY7jV9w) 
