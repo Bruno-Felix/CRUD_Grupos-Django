@@ -86,13 +86,14 @@ $ source bin/activate
 $ cd ..
 ```
 
-**Rodando o Projeto**
+### Rodando o Projeto
 
 ```
 $ cd novosGrupos
 
 $ python3 manage.py runserver
 ```
+
 **Entrar no servidor de desenvolvimento**: http://127.0.0.1:8000/
 
 ### Uso do CRUD
