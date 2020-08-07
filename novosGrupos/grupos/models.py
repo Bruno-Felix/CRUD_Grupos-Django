@@ -36,7 +36,7 @@ class Comeback(models.Model):
 
     nome = models.CharField("Nome da Música", max_length = 100, unique=True)
     # ForeignKey vai associar um grupo ao comeback criado: o comeback N é do grupo X
-    grupo = models.ForeignKey(Grupo, verbose_name="Grupo do Artista", on_delete=models.CASCADE)
+    grupo = models.ForeignKey(Grupo, verbose_name="Grupo do Música", on_delete=models.CASCADE)
     data = models.DateField("Data do Música")
     views = models.PositiveIntegerField("Número de Views")
     likes = models.PositiveIntegerField("Número de Likes")
