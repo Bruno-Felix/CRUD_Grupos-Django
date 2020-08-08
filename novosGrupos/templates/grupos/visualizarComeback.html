@@ -8,16 +8,16 @@
                       <span> > </span>
                       <a class="botaoVoltar" href="/visualizarGrupo/{{ comeback.grupo.id }}"> {{ comeback.grupo.nome }} </a></li>
 
-<div class="divVBotoesComeback">
-    <div class="botoesComeback">
-        <a class="opcoesVEditarComeback" href="/editarComeback/{{ comeback.id }}">Editar</a>
-        <a class="opcoesVExcluirComeback" href="/excluirComeback/{{ comeback.id }}">Excluir</a>
+<div class="divBotoesVisualizar">
+    <div class="botoesVisualizar">
+        <a class="opcaoEditarVisualizar" href="/editarComeback/{{ comeback.id }}">Editar</a>
+        <a class="opcaoExcluirVisualizar" href="/excluirComeback/{{ comeback.id }}">Excluir</a>
     </div>
 </div>
 
-<section class="sectionVComeback">   
-    <div class="divVComeback">
-        <div class="comebackVInformacoes">
+<section class="sectionVisualizar">   
+    <div class="divVisualizar">
+        <div class="informacoesVisualizar">
             <h1><strong> {{ comeback.nome }} </strong></h1><br>
             <div>
                 <strong>Grupo:</strong><a href="/visualizarGrupo/{{ comeback.grupo.id }}"> {{ comeback.grupo.nome }} </a>

@@ -6,25 +6,25 @@
 
 <li class="divVoltar"><a class="botaoVoltar" href="/grupos">Lista de Grupos</a></li>
 
-<div class="divVBotoesGrupo">
-    <div class="botoesGrupo">
-        <a class="opcoesVEditarGrupo" href="/editarGrupo/{{ grupo.id }}">Editar</a>
-        <a class="opcoesVExcluirGrupo" href="/excluirGrupo/{{ grupo.id }}">Excluir</a>
+<div class="divBotoesVisualizar">
+    <div class="botoesVisualizar">
+        <a class="opcaoEditarVisualizar" href="/editarGrupo/{{ grupo.id }}">Editar</a>
+        <a class="opcaoExcluirVisualizar" href="/excluirGrupo/{{ grupo.id }}">Excluir</a>
     </div>
 </div>
 
-<section class="sectionVGrupo">   
-    <div class="divVGrupo">
-        <div class="grupoVInformacoes">
+<section class="sectionVisualizar">   
+    <div class="divVisualizar">
+        <div class="grupoInformacoesVisualizar">
             <h1><strong> {{ grupo.nome}} </strong></h1><br>
             <strong> Ano do Debut:</strong> <span class="spanDataDebut"> {{ grupo.debut }} </span><br><br>
             <strong> Resumo:</strong><p> {{ grupo.resumo }} </p>
         </div>
 
-        <div class="grupoVObjetos">
-            <div class="grupoVObjetoArtistas">
+        <div class="grupoVisualizarObjetos">
+            <div class="grupoVisualizarObjetoArtistas">
                 <h2><strong>Artistas</strong></h2><br>
-                <div class="gridObjetos">
+                <div class="gridObjetosGrupo">
 
                     {% for artista in grupo.artista_set.all %}
 
@@ -37,9 +37,9 @@
                 <a class="botaoAdicionar" href="/criarArtista/{{ grupo.id }}"> Adicionar </a>
             </div>
             
-            <div class="grupoVObjetoComebacks">
+            <div class="grupoVisualizarObjetoComebacks">
                 <h2><strong>Músicas</strong></h2><br>
-                <div class="gridObjetos">   
+                <div class="gridObjetosGrupo">   
 
                     {% for comeback in grupo.comeback_set.all %}
 

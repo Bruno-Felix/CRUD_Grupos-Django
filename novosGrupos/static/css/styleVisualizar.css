@@ -1,4 +1,4 @@
-.divVBotoesGrupo{
+.divBotoesVisualizar{
     max-width: 1250px;
     width: 100%;
     margin: auto;
@@ -8,13 +8,14 @@
     justify-content: right;
 }
 
-.botoesGrupo{
+.botoesVisualizar{
     width: auto;
     height: auto;
+
     display: flex;
 }
 
-.opcoesVEditarGrupo{
+.opcaoEditarVisualizar{
     width: 226px; 
     height: 45px;
     padding-top: 7px;
@@ -26,81 +27,165 @@
     color: #090431;
     border: 1px solid #090431;
 }
-.opcoesVEditarGrupo:hover{
+
+.opcaoEditarVisualizar:hover{
     text-decoration: none;
     color: #ffffff;
     background-color: #090431;
 }
 
-.opcoesVExcluirGrupo{
+.opcaoExcluirVisualizar{
     width: 226px;
-    border-radius: 7px;
-    padding-top: 7px;
     height: 45px;
+    padding-top: 7px;
+
     text-align: center;
     font-size: 20px;
+    border-radius: 7px;
     color: #ffffff;
     background-color: #ff0000;
 }
-.opcoesVExcluirGrupo:hover{
+
+.opcaoExcluirVisualizar:hover{
     text-decoration: none;
     color: #ffffff;
     background-color: #e60000;
 }
 
-@media only screen and (max-width:650px){
+@media only screen and (max-width:800px){
 
-    .divVBotoesGrupo{
+    .divBotoesVisualizar{
         justify-content: center;
         align-items: center;
     }
 
-    .botoesGrupo{
+    .botoesVisualizar{
         margin-top: 20px;
         flex-direction: column;
 
     }
-    .opcoesVEditarGrupo{
+    .opcaoEditarVisualizar{
         margin-right: 0px;
         margin-bottom: 20px;
     }
 }
+
+
 /* -------------------- */
-.sectionVGrupo{
+.sectionVisualizar{
     max-width: 1250px;
     width: 100%;
     margin: auto;
     height: auto;
     padding: 10px 20px;
+
     display: flex;
     flex-wrap: wrap;
 }
 
-.divVGrupo{
+.divVisualizar{
     width: 100%;
-    background-color: #c4cdd4;
-    border-radius: 7px;
     padding: 1px;
     margin-top: 10px;
+
     display: flex;
     flex-wrap: wrap;
+
+    border-radius: 7px;
+    background-color: #c4cdd4;
 }
 
-@media only screen and (max-width:700px){
-    .divVGrupo{
+@media only screen and (max-width:800px){
+    .divVisualizar{
         flex-direction: column;
     }
 }
 
 
 /* -------------------- */
-.grupoVInformacoes{
-    color: #090431;
-    border-radius: 7px;
+.grupoInformacoesVisualizar{
     flex: 1 1 200px;
+    border-radius: 7px;
+    padding: 20px;
+
+    color: #090431;
     background-color: #ffffff;
+}
+
+.grupoInformacoesVisualizar > p{
+    height: auto;
+    text-align: justify;
+    line-height: 27px;
+    font-family: 'Lora', serif;
+    color: #2c2c2c;
+}
+
+.informacoesVisualizar{
+    flex: 3;
     margin-right: 1px;
     padding: 20px;
+    
+    border-radius: 7px;
+    color: #090431;
+    background-color: #ffffff;
+}
+
+.informacoesVisualizar > div:last-child {
+    margin-top: 20px;
+}
+
+.informacoesVisualizar > div:last-child > span{
+    margin-right: 40px;
+
+    font-family: 'Lora', serif;
+    color: #2c2c2c;
+}
+
+.informacoesVisualizar > div > a{
+    display: inline-block;
+    width: 226px; 
+    height: 45px;
+    padding-top: 8px;
+    margin-right: 20px;
+    margin-left: 5px;
+
+    text-align: center;
+    font-family: 'Lora', serif;
+    border-radius: 7px;
+    color: #090431;
+    border:1px solid #090431;
+}
+
+.informacoesVisualizar > div > a:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #090431;
+}
+
+@media only screen and (max-width:800px){
+
+    .informacoesVisualizar{
+        margin-right: 0px;
+    }
+
+    .informacoesVisualizar > div > a{
+        display: block;
+        margin: 0 0 15px 0;
+    }
+
+    .informacoesVisualizar > div:last-child{
+        margin-top: 0px;
+    }
+
+    .informacoesVisualizar > div:last-child > span{
+        margin-right: 0;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .informacoesVisualizar > div:last-child > span:last-child{
+        margin-bottom: 0px;
+    }
 }
 
 .spanDataDebut{
@@ -108,31 +193,18 @@
     color: #2c2c2c;
 }
 
-.grupoVInformacoes > p{
-    text-align: justify;
-    line-height: 27px;
-    height: auto;
-    font-family: 'Lora', serif;
-    color: #2c2c2c;
-}
-
-@media only screen and (max-width:700px){
-    .grupoVInformacoes{
-        margin-right: 0px;
-        margin-bottom: 1px; 
-    }
-}
-
 
 /* -------------------- */
-.grupoVObjetos{
-    color: #090431;
-    border-radius: 7px;
+.grupoVisualizarObjetos{    
+    margin-left: 1px;
     flex: 1;
     flex-direction: column;
+
+    border-radius: 7px;
+    color: #090431;
 }
 
-.grupoVObjetoArtistas{
+.grupoVisualizarObjetoArtistas{
     flex: 1;
     margin-bottom: 1px;
     padding: 20px;
@@ -141,7 +213,7 @@
     background-color: #ffffff;
 }
         
-.grupoVObjetoComebacks{
+.grupoVisualizarObjetoComebacks{
     width: 100%;
     border-radius: 7px;
     padding: 20px;
@@ -149,7 +221,7 @@
     background-color: #ffffff;
 }
 
-.gridObjetos{
+.gridObjetosGrupo{
     display: grid;
     width: auto;
     grid-template-columns: 1fr 1fr;
@@ -157,8 +229,8 @@
     grid-row-gap: 10px;
 }
 
-.gridObjetos > a{
-    padding-top: 10px;
+.gridObjetosGrupo > a{
+    padding: 10px 10px 0px;
     padding-bottom: 10px;
     
     text-align: center;
@@ -168,7 +240,7 @@
     background-color: #c4cdd4;
 }
 
-.gridObjetos > a:hover{
+.gridObjetosGrupo > a:hover{
     color: #ffffff;
     background-color: #090431;
     text-decoration: none;
@@ -194,4 +266,14 @@
     color: #ffffff;
     background-color: #090431;
     text-decoration: none;
+}
+
+@media only screen and (max-width:800px){
+    .grupoInformacoesVisualizar{
+        margin-bottom: 1px; 
+    }
+
+    .grupoVisualizarObjetos{    
+        margin-left: 0px;
+    }
 }

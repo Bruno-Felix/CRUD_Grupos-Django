@@ -8,16 +8,16 @@
                       <span> > </span>
                       <a class="botaoVoltar" href="/visualizarGrupo/{{ artista.grupo.id }}"> {{ artista.grupo.nome }} </a></li>
 
-<div class="divVBotoesArtista">
-    <div class="botoesArtista">
-        <a class="opcoesVEditarArtista" href="/editarArtista/{{ artista.id }}">Editar</a>
-        <a class="opcoesVExcluirArtista" href="/excluirArtista/{{ artista.id }}">Excluir</a>
+<div class="divBotoesVisualizar">
+    <div class="botoesVisualizar">
+        <a class="opcaoEditarVisualizar" href="/editarArtista/{{ artista.id }}">Editar</a>
+        <a class="opcaoExcluirVisualizar" href="/excluirArtista/{{ artista.id }}">Excluir</a>
     </div>
 </div>
 
-<section class="sectionVArtista">   
-    <div class="divVArtista">
-        <div class="artistaVInformacoes">
+<section class="sectionVisualizar">   
+    <div class="divVisualizar">
+        <div class="informacoesVisualizar">
             <h1><strong> {{ artista.nome}} </strong></h1><br>
             <div>
                 <strong>Grupo:</strong><a href="/visualizarGrupo/{{ artista.grupo.id }}"> {{ artista.grupo.nome }} </a>
