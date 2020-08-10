@@ -60,10 +60,9 @@
     }
 
     .botoesVisualizar{
-        margin-top: 20px;
         flex-direction: column;
-
     }
+    
     .opcaoEditarVisualizar{
         margin-right: 0px;
         margin-bottom: 20px;
