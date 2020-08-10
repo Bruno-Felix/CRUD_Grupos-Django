@@ -18,7 +18,7 @@ O projeto foi feito no intuito de servir como uma inicialização ao Django e ao
 <img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/menuMobile.png" width="200">
 <img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGruposMobile.png" width="200">
 <img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarGrupoMobile.png" width="200">
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/excluirGrupoMobile.png" width="200">
+<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarArtistaMobile.png" width="200">
 
 Para mais imagens do projeto, [clique aqui](https://drive.google.com/drive/folders/13_F1q7Dy3HBfuFGxwfPXQfPnM9hpzg1u?usp=sharing)
 
