@@ -6,8 +6,9 @@
 
 {% block content %}
 
-<section class="divExcluir">
+<section class="sectionExcluir">
     <h1 class="tituloDivEditarGrupo"><strong> Tem Certeza que deseja Excluir {{ comeback.nome }} ?</strong></h1>
+    
     <form action="" method="post"> 
 
         {% csrf_token %}
