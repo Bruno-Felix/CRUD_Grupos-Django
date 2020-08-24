@@ -1,14 +1,15 @@
-# Crud Grupos Musicais
+<h1 align="center">Crud Grupos</h1>
+<p align="center">Crud basico de Grupos Musicais</p>
+
+<p align="center">
+  <img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/principalVisualizerGrupo.png" width="900">
+</p>
 
 
 ## Sobre o Projeto
 
-O projeto é um CRUD (Create, Read, Update e Delete) de Grupos Musicais onde se pode manipular os Grupos, os Artistas e as Músicas.
-
-
-## Porque?
-
-O projeto foi feito no intuito de servir como uma inicialização ao Django e ao Desenvolvimento Web.
+CRUD Grupos - O projeto é um CRUD (Create, Read, Update e Delete) de Grupos Musicais onde as pessoas podem gerenciar Grupos, seus Artistas e Músicas.<br><br>
+O projeto foi feito no intuito de estudar o Django e suas ferramentas e de inicialização ao Desenvolvimento Web.
 
 
 ## Imagens
