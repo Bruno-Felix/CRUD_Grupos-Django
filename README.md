@@ -12,38 +12,20 @@ CRUD Grupos - O projeto é um CRUD (Create, Read, Update e Delete) de Grupos Mus
 O projeto foi feito no intuito de estudar o Django e suas ferramentas e de inicialização ao Desenvolvimento Web.
 
 
-## Imagens
+## Features
 
-![Preview-Screens](https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGrupos.png) 
-![Preview-Screens](https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarGrupo.png)
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/menuMobile.png" width="200">
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGruposMobile.png" width="200">
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarGrupoMobile.png" width="200">
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarArtistaMobile.png" width="200">
-
-Para mais imagens do projeto, [clique aqui](https://drive.google.com/drive/folders/13_F1q7Dy3HBfuFGxwfPXQfPnM9hpzg1u?usp=sharing)
-
-
-## Funcionalidades
-
-* Lista de Grupos:
-
-  * Visualizar Grupo:
-     * Editar Grupo;
-     * Excluir Grupo;
-     * Lista de Artistas do Grupo:
-     
-       * Visualizar Artista;
-          * Editar Artista;
-          * Excluir Artista.
-     * Lista de Músicas do Grupo:
-     
-       * Visualizar Música.
-            * Editar Música;
-            * Excluir Música.
-            
-* Lista de todos Artistas;
-* Lista de todas Músicas;
+- [X] Listar todos os Grupo;
+- [X] Visualizar infos do Grupo;
+- [X] Editar Grupo;
+- [X] Excluir Grupo.<br><br>
+- [X] Visualizar infos do Artista;
+- [X] Editar Artista;
+- [X] Excluir Artista;<br><br>
+- [X] Visualizar infos da Música;
+- [X] Editar Música;
+- [X] Excluir Música.<br><br>
+- [X] Listar todos os Artistas;
+- [X] Listar todas as Músicas;
       
 
 ## Tecnologias
@@ -55,8 +37,15 @@ Para mais imagens do projeto, [clique aqui](https://drive.google.com/drive/folde
 * HTML
 * CSS
 
+## Imagens da aplicação
 
-## Rodar Localmente
+<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGrupos.png" width="400">
+<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarGrupo.png" width="400">
+<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGruposMobile.png" width="200">
+<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarArtistaMobile.png" width="200">
+
+Para mais imagens do projeto, [clique aqui](https://drive.google.com/drive/folders/13_F1q7Dy3HBfuFGxwfPXQfPnM9hpzg1u?usp=sharing)
+## Rodar a aplicação
 
 ### Pré requisitos
 
@@ -102,8 +91,8 @@ $ python3 manage.py runserver
 **Para auxiliar um melhor teste do CRUD, alguns casos teste para serem usados**: [Casos Teste](https://github.com/Bruno-Felix/CRUD_Grupos/wiki/Grupos) 
 
 
-## Música:
+## Música
 
-Abra espaço para novas culturas e curta música boa, independente de onde ela venha:
+Abra espaço para novas culturas e músicas, independente de onde ela venha:
 
 Minha Playlist Spotify: [Kpop, Fighting!!](https://open.spotify.com/playlist/3S7MGGfPYJ0vRhII5Mj7t3?si=6b8F4Bf8SKmDbzrEY7jV9w) 
