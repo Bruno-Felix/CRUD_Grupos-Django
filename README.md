@@ -28,15 +28,6 @@ O projeto foi feito no intuito de estudar o Django e suas ferramentas e de inici
 - [X] Listar todas as Músicas;
       
 
-## Tecnologias
-
-* Python
-* Django
-* VirtualEnv
-* Crispy Forms
-* HTML
-* CSS
-
 ## Imagens da aplicação
 
 <p align="center">
@@ -63,6 +54,19 @@ O projeto foi feito no intuito de estudar o Django e suas ferramentas e de inici
 </p>
 
 Para mais imagens do projeto, [clique aqui](https://drive.google.com/drive/folders/13_F1q7Dy3HBfuFGxwfPXQfPnM9hpzg1u?usp=sharing)
+
+
+## Tecnologias
+
+* Python
+* Django
+* VirtualEnv
+* Crispy Forms
+* HTML
+* CSS
+
+---
+
 ## Rodar a aplicação
 
 ### Pré requisitos
@@ -106,8 +110,9 @@ $ python3 manage.py runserver
 
 ### Uso do CRUD
 
-**Para auxiliar um melhor teste do CRUD, alguns casos teste para serem usados**: [Casos Teste](https://github.com/Bruno-Felix/CRUD_Grupos/wiki/Grupos) 
+Para auxiliar um melhor teste do CRUD, alguns casos teste para serem usados: [Casos Teste](https://github.com/Bruno-Felix/CRUD_Grupos/wiki/Grupos) 
 
+---
 
 ## Música
 
