@@ -39,10 +39,28 @@ O projeto foi feito no intuito de estudar o Django e suas ferramentas e de inici
 
 ## Imagens da aplicação
 
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGrupos.png" width="400">
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarGrupo.png" width="400">
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGruposMobile.png" width="200">
-<img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarArtistaMobile.png" width="200">
+<p align="center">
+  <kbd>
+    <img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGrupos.png" width="705">
+  </kbd>
+  <kbd>
+    <img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarGrupo.png" width="705">
+  </kbd>
+</p>
+
+<p align="center">
+  <kbd>
+    <img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/listaDeGruposMobile.png" width="200">
+  </kbd>
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  <kbd>
+    <img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/visualizarArtistaMobile.png" width="200">
+  </kbd>
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  <kbd>
+    <img src="https://github.com/Bruno-Felix/CRUD_Grupos/blob/master/novosGrupos/static/img/editarGrupoMobile.png" width="200">
+  </kbd>
+</p>
 
 Para mais imagens do projeto, [clique aqui](https://drive.google.com/drive/folders/13_F1q7Dy3HBfuFGxwfPXQfPnM9hpzg1u?usp=sharing)
 ## Rodar a aplicação
